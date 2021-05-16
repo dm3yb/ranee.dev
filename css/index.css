@@ -45,39 +45,47 @@
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAjsOUbOvISTs.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAjsOUbOvISTs.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAjsOUZevISTs.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAjsOUZevISTs.woff2)
+    format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAjsOUb-vISTs.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAjsOUb-vISTs.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAjsOUYevI.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAjsOUYevI.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 /* ============================== FONT'S END ============================== */
@@ -241,12 +249,12 @@ span,
 
 :root {
   --hue: 226;
-  --system-color: hsl(var(--hue), 66%, 51%);
-  --secondary-system-color: hsl(calc(var(--hue) - 2), 35%, 25%);
-  --lightnes-gray: hsl(calc(var(--hue) - 55), 16%, 22%);
-  --opacity-system-color: hsla(var(--hue), 66%, 51%, 0.1);
-  --white: #fff;
-  --black: #000;
+  --theme-color: hsl(var(--hue), 66%, 51%);
+  --brightnes-color: hsl(calc(var(--hue) - 226), 0%, 100%);
+  --opacity-brightnes-color: hsla(calc(var(--hue) - 226), 0%, 100%, 0.6);
+  --theme-text-color: hsl(calc(var(--hue) - 2), 34%, 13%);
+  --theme-desc-color: hsl(calc(var(--hue) - 11), 16%, 38%);
+  --btns-color: hsl(calc(var(--hue) - 12), 19%, 29%);
   --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -255,30 +263,22 @@ span,
 
 h1 {
   font-size: 45px;
-  color: var(--secondary-system-color);
   line-height: 1.6;
+  color: var(--theme-title-color);
 }
 
 .desc {
-  color: var(--lightnes-gray);
   line-height: 1.4;
 }
 
 .desc.hero-desc {
   font-size: 18px;
+  margin: 20px 0;
 }
 
 .subtitle {
   font-size: 22px;
-  color: var(--secondary-system-color);
   line-height: 1.4;
-}
-
-.logo-title{
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--secondary-system-color);
 }
 
 .btn {
@@ -287,22 +287,22 @@ h1 {
   min-width: 140px;
   padding: 9px 20px;
   font-family: inherit;
-  border: 1px solid var(--system-color);
+  border: 1px solid var(--brightnes-color);
   border-radius: 5px;
   font-size: 15px;
   font-weight: 700;
-  color: var(--white);
-  background-color: var(--system-color);
+  color: var(--btns-color);
+  background-color: var(--brightnes-color);
   transition: 0.25s ease-in-out;
 }
 
 .btn.transparent {
   background-color: transparent;
-  color: var(--system-color);
+  color: var(--brightnes-color);
 }
 
 .btn.transparent:hover {
-  background-color: var(--system-color);
+  background-color: var(--theme-color);
   color: var(--white);
 }
 
@@ -317,7 +317,7 @@ h1 {
 .btn.large:hover,
 .btn.short:hover {
   background-color: transparent;
-  color: var(--system-color);
+  color: var(--brightnes-color);
 }
 /* ============================== COMMON END ============================== */
 
@@ -325,9 +325,15 @@ h1 {
 .header {
   position: sticky;
   top: 0;
-  background-color: var(--white);
+  background-color: var(--theme-color);
   padding: 15px 0;
-  border-bottom: 3px solid var(--opacity-system-color);
+}
+
+.logo-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--opacity-brightnes-color);
 }
 
 .navbar,
@@ -338,12 +344,12 @@ h1 {
   justify-content: space-between;
 }
 
-.logo-wrap i{
+.logo-wrap i {
   font-size: 32px;
-  color: var(--system-color);
+  color: var(--brightnes-color);
 }
 
-.logo-wrap>:nth-child(n+2){
+.logo-wrap > :nth-child(n + 2) {
   margin-left: 20px;
 }
 
@@ -351,20 +357,20 @@ h1 {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
-  color: var(--secondary-system-color);
+  color: var(--opacity-brightnes-color);
 }
 
 .nav a {
   padding: 15px 10px;
-  transition: .25s;
+  transition: 0.25s;
 }
 
 .nav > :nth-child(n + 2) {
   margin-left: 20px;
 }
 
-.nav a:hover{
-  color: var(--system-color);
+.nav a:hover {
+  color: var(--brightnes-color);
 }
 /* ============================== HEADER END ============================== */
 
