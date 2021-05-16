@@ -262,9 +262,9 @@ span,
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 50px;
   line-height: 1.6;
-  color: var(--theme-title-color);
+  color: var(--brightnes-color);
 }
 
 .desc {
@@ -273,7 +273,14 @@ h1 {
 
 .desc.hero-desc {
   font-size: 18px;
-  margin: 20px 0;
+  margin: 25px 0;
+  color: var(--opacity-brightnes-color);
+}
+
+.hero-text{
+  font-size: 22px;
+  line-height: 1.1;
+  color: var(--brightnes-color);
 }
 
 .subtitle {
@@ -375,6 +382,11 @@ h1 {
 /* ============================== HEADER END ============================== */
 
 /* ============================== HERO START ============================== */
+.hero{
+  padding: 200px 0;
+  background-color: var(--theme-color);
+  text-align: center;
+}
 /* ============================== HERO END ============================== */
 
 /* ============================== ABOUT START ============================== */
