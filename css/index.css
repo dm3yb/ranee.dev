@@ -252,8 +252,8 @@ span,
   --theme-color: hsl(var(--hue), 66%, 51%);
   --brightnes-color: hsl(calc(var(--hue) - 226), 0%, 100%);
   --opacity-brightnes-color: hsla(calc(var(--hue) - 226), 0%, 100%, 0.6);
-  --theme-text-color: hsl(calc(var(--hue) - 2), 34%, 13%);
-  --theme-desc-color: hsl(calc(var(--hue) - 11), 16%, 38%);
+  --theme-desc-color: hsl(calc(var(--hue) - 11), 16%, 20%);
+  --theme-title-colot: hsl(calc(var(--hue) - 2), 34%, 13%);
   --btns-color: hsl(calc(var(--hue) - 12), 19%, 29%);
   --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
@@ -286,6 +286,13 @@ h1 {
 .subtitle {
   font-size: 22px;
   line-height: 1.4;
+}
+
+.title{
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--theme-title-color);
 }
 
 .btn {
@@ -390,6 +397,19 @@ h1 {
 /* ============================== HERO END ============================== */
 
 /* ============================== ABOUT START ============================== */
+.about{
+  padding: 80px 0;
+}
+
+.about-img-box img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-info-box>:nth-child(n+1){
+  margin-bottom: 15px;
+}
 /* ============================== ABOUT END ============================== */
 
 /* ============================== SERVICES START ============================== */
