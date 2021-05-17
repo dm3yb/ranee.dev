@@ -251,6 +251,7 @@ span,
   --hue: 226;
   --theme-color: hsl(var(--hue), 66%, 51%);
   --darknes-theme-color: hsl(calc(var(--hue) + 3), 43%, 34%);
+  --opacity-theme-color: hsla(var(--hue), 66%, 55%, 0.9);
   --theme-desc-color: hsl(calc(var(--hue) - 11), 16%, 20%);
   --theme-title-colot: hsl(calc(var(--hue) - 2), 34%, 13%);
   --btns-color: hsl(calc(var(--hue) - 12), 19%, 29%);
@@ -335,6 +336,18 @@ h1 {
   min-width: 110px;
 }
 
+.btn.theme-btn {
+  background-color: var(--theme-color);
+  color: var(--brightnes-color);
+  border: 1px solid transparent;
+}
+
+.btn.theme-btn:hover {
+  border: 1px solid var(--theme-color);
+  background-color: transparent;
+  color: var(--theme-color);
+}
+
 .btn.large:hover,
 .btn.short:hover {
   background-color: transparent;
@@ -406,7 +419,8 @@ h1 {
 
 /* ============================== ABOUT START ============================== */
 .about {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 50px;
 }
 
 .about-img-box img {
@@ -427,7 +441,7 @@ h1 {
 
 /* ============================== SERVICES START ============================== */
 .services {
-  padding: 120px 0;
+  padding: 180px 0;
 }
 
 .services-item-wrap > :nth-child(1) {
@@ -457,27 +471,89 @@ h1 {
 
 /* ============================== BANNER START ============================== */
 .banner {
-  padding: 80px 0;
+  padding: 75px 0;
   background-color: var(--theme-color);
   text-align: center;
   color: var(--brightnes-color);
 }
 
-.banner-item-box i{
+.banner-item-box i {
   font-size: 32px;
 }
 
-.subtitle.item-box{
+.subtitle.item-box {
   margin: 20px 0;
 }
 
-.desc.item-box{
+.desc.item-box {
   color: var(--opacity-brightnes-color);
   font-size: 15px;
 }
 /* ============================== BANNER END ============================== */
 
 /* ============================== PORTFOLIO START ============================== */
+.portfolio {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.portfolio-item {
+  height: 350px;
+  border: 1px solid var(--lightnes-gray);
+  background-color: var(--darknes-theme-color);
+  position: relative;
+}
+
+.portfolio-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: var(--opacity-theme-color);
+  transition: 0.35s ease-in-out;
+}
+
+.portfolio-content{
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brightnes-color);
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+
+.portfolio-content i{
+  margin-right: 10px;
+}
+
+.portfolio-item:hover>.portfolio-content{
+  visibility: visible;
+  opacity: 1;
+}
+
+.portfolio-item:hover::before {
+  height: 100%;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-item-wrap > :nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.portfolio > .container > .btn.theme-btn {
+  margin-top: 35px;
+}
+
 /* ============================== PORTFOLIO END ============================== */
 
 /* ============================== FOOTER START ============================== */
