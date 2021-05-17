@@ -250,25 +250,27 @@ span,
 :root {
   --hue: 226;
   --theme-color: hsl(var(--hue), 66%, 51%);
+  --darknes-theme-color: hsl(calc(var(--hue) + 3), 43%, 34%);
   --brightnes-color: hsl(calc(var(--hue) - 226), 0%, 100%);
-  --opacity-brightnes-color: hsla(calc(var(--hue) - 226), 0%, 100%, 0.6);
+  --opacity-brightnes-color: hsla(calc(var(--hue) - 226), 0%, 100%, 0.5);
   --theme-desc-color: hsl(calc(var(--hue) - 11), 16%, 20%);
   --theme-title-colot: hsl(calc(var(--hue) - 2), 34%, 13%);
   --btns-color: hsl(calc(var(--hue) - 12), 19%, 29%);
   --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --active-shadow: hsla(var(--hue), 66%, 51%, 0.2);
+  --theme-filter-shadow: hsla(calc(var(--hue) - 1), 57%, 21%, 0.2);
 }
 
 h1 {
   font-size: 50px;
-  line-height: 1.6;
+  line-height: 1.5;
   color: var(--brightnes-color);
 }
 
 .desc {
   line-height: 1.4;
+  color: var(--theme-desc-color);
 }
 
 .desc.hero-desc {
@@ -292,6 +294,7 @@ h1 {
   font-size: 30px;
   line-height: 1.2;
   text-align: center;
+  font-weight: 700;
   color: var(--theme-title-color);
 }
 
@@ -347,7 +350,7 @@ h1 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
-  color: var(--opacity-brightnes-color);
+  color: var(--brightnes-color);
 }
 
 .navbar,
@@ -405,10 +408,15 @@ h1 {
   width: 100%;
   height: auto;
   object-fit: cover;
+  filter: drop-shadow(2px 4px 6px var(--theme-filter-shadow));
 }
 
-.about-info-box>:nth-child(n+1){
-  margin-bottom: 15px;
+.about-info-box{
+  font-size: 17px;
+}
+
+.about-info-box>:nth-child(n+2){
+  margin-top: 15px;
 }
 /* ============================== ABOUT END ============================== */
 
