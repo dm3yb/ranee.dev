@@ -251,14 +251,16 @@ span,
   --hue: 226;
   --theme-color: hsl(var(--hue), 66%, 51%);
   --darknes-theme-color: hsl(calc(var(--hue) + 3), 43%, 34%);
-  --brightnes-color: hsl(calc(var(--hue) - 226), 0%, 100%);
-  --opacity-brightnes-color: hsla(calc(var(--hue) - 226), 0%, 100%, 0.5);
   --theme-desc-color: hsl(calc(var(--hue) - 11), 16%, 20%);
   --theme-title-colot: hsl(calc(var(--hue) - 2), 34%, 13%);
   --btns-color: hsl(calc(var(--hue) - 12), 19%, 29%);
+  --brightnes-color: hsl(calc(var(--hue) - 226), 0%, 100%);
+  --opacity-brightnes-color: hsla(calc(var(--hue) - 226), 0%, 100%, 0.5);
+  --lightnes-gray: hsl(calc(var(--hue) - 226), 0%, 80%);
   --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --theme-shadow: hsla(var(--hue), 57%, 21%, 0.3);
   --theme-filter-shadow: hsla(calc(var(--hue) - 1), 57%, 21%, 0.2);
 }
 
@@ -287,6 +289,7 @@ h1 {
 
 .subtitle {
   font-size: 22px;
+  font-weight: 700;
   line-height: 1.4;
 }
 
@@ -295,6 +298,7 @@ h1 {
   line-height: 1.2;
   text-align: center;
   font-weight: 700;
+  margin-bottom: 35px;
   color: var(--theme-title-color);
 }
 
@@ -344,6 +348,7 @@ h1 {
   top: 0;
   background-color: var(--theme-color);
   padding: 15px 0;
+  z-index: 9999;
 }
 
 .logo-title {
@@ -421,6 +426,33 @@ h1 {
 /* ============================== ABOUT END ============================== */
 
 /* ============================== SERVICES START ============================== */
+.services{
+  padding: 50px 0;
+}
+
+.services-item-wrap>:nth-child(1){
+  margin-bottom: 20px;
+}
+
+.services-item{
+  padding: 30px;
+  min-height: 235px;
+  border: 1px solid var(--lightnes-gray);
+  transition: .25s;
+}
+
+.services-item>:nth-child(n+2){
+  margin-top: 15px;
+}
+
+.services-item i{
+  font-size: 27px;
+  color: var(--theme-color);
+}
+
+.services-item:hover{
+  box-shadow: 0 2px 10px 0 var(--theme-shadow);
+}
 /* ============================== SERVICES END ============================== */
 
 /* ============================== PORTFOLIO START ============================== */
