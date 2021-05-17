@@ -255,7 +255,7 @@ span,
   --theme-title-colot: hsl(calc(var(--hue) - 2), 34%, 13%);
   --btns-color: hsl(calc(var(--hue) - 12), 19%, 29%);
   --brightnes-color: hsl(calc(var(--hue) - 226), 0%, 100%);
-  --opacity-brightnes-color: hsla(calc(var(--hue) - 226), 0%, 100%, 0.5);
+  --opacity-brightnes-color: hsla(calc(var(--hue) - 226), 0%, 100%, 0.6);
   --lightnes-gray: hsl(calc(var(--hue) - 226), 0%, 80%);
   --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
@@ -281,7 +281,7 @@ h1 {
   color: var(--opacity-brightnes-color);
 }
 
-.hero-text{
+.hero-text {
   font-size: 22px;
   line-height: 1.1;
   color: var(--brightnes-color);
@@ -293,12 +293,12 @@ h1 {
   line-height: 1.4;
 }
 
-.title{
+.title {
   font-size: 30px;
   line-height: 1.2;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   color: var(--theme-title-color);
 }
 
@@ -397,7 +397,7 @@ h1 {
 /* ============================== HEADER END ============================== */
 
 /* ============================== HERO START ============================== */
-.hero{
+.hero {
   padding: 200px 0;
   background-color: var(--theme-color);
   text-align: center;
@@ -405,55 +405,77 @@ h1 {
 /* ============================== HERO END ============================== */
 
 /* ============================== ABOUT START ============================== */
-.about{
-  padding: 80px 0;
+.about {
+  padding: 120px 0;
 }
 
-.about-img-box img{
+.about-img-box img {
   width: 100%;
   height: auto;
   object-fit: cover;
   filter: drop-shadow(2px 4px 6px var(--theme-filter-shadow));
 }
 
-.about-info-box{
+.about-info-box {
   font-size: 17px;
 }
 
-.about-info-box>:nth-child(n+2){
+.about-info-box > :nth-child(n + 2) {
   margin-top: 15px;
 }
 /* ============================== ABOUT END ============================== */
 
 /* ============================== SERVICES START ============================== */
-.services{
-  padding: 50px 0;
+.services {
+  padding: 120px 0;
 }
 
-.services-item-wrap>:nth-child(1){
+.services-item-wrap > :nth-child(1) {
   margin-bottom: 20px;
 }
 
-.services-item{
+.services-item {
   padding: 30px;
   min-height: 235px;
   border: 1px solid var(--lightnes-gray);
-  transition: .25s;
+  transition: 0.25s;
 }
 
-.services-item>:nth-child(n+2){
+.services-item > :nth-child(n + 2) {
   margin-top: 15px;
 }
 
-.services-item i{
+.services-item i {
   font-size: 27px;
   color: var(--theme-color);
 }
 
-.services-item:hover{
+.services-item:hover {
   box-shadow: 0 2px 10px 0 var(--theme-shadow);
 }
 /* ============================== SERVICES END ============================== */
+
+/* ============================== BANNER START ============================== */
+.banner {
+  padding: 80px 0;
+  background-color: var(--theme-color);
+  text-align: center;
+  color: var(--brightnes-color);
+}
+
+.banner-item-box i{
+  font-size: 32px;
+}
+
+.subtitle.item-box{
+  margin: 20px 0;
+}
+
+.desc.item-box{
+  color: var(--opacity-brightnes-color);
+  font-size: 15px;
+}
+/* ============================== BANNER END ============================== */
 
 /* ============================== PORTFOLIO START ============================== */
 /* ============================== PORTFOLIO END ============================== */
