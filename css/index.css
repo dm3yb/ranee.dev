@@ -283,7 +283,7 @@ span,
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --theme-shadow: hsla(var(--hue), 57%, 21%, 0.3);
   --theme-filter-shadow: hsla(calc(var(--hue) - 1), 57%, 21%, 0.2);
-  --transparent-gray: hsl(calc(var(--hue) - 1), 40%, 98%);
+  --transparent-gray: hsl(calc(var(--hue) - 1), 45%, 97%);
   --scrollbar-track-color: hsl(var(--hue), 0%, 87%);
 }
 
@@ -552,13 +552,13 @@ h1 {
 /* ============================== BANNER START ============================== */
 .banner {
   padding: 75px 0;
-  background-color: var(--theme-color);
+  background-color: var(--transparent-gray);
   text-align: center;
-  color: var(--brightnes-color);
 }
 
 .banner-item-box i {
   font-size: 32px;
+  color: var(--theme-color);
 }
 
 .subtitle.item-box {
@@ -566,7 +566,6 @@ h1 {
 }
 
 .desc.item-box {
-  color: var(--opacity-brightnes-color);
   font-size: 15px;
 }
 /* ============================== BANNER END ============================== */
