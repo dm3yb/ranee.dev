@@ -14,3 +14,5 @@ accordionEl.addEventListener("click", (e) => {
     title.classList.add('active-title')
   }
 });
+
+copyRightYear.textContent = new Date().getFullYear()

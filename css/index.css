@@ -250,7 +250,7 @@ span,
 :root {
   --hue: 226;
   --theme-color: hsl(var(--hue), 66%, 51%);
-  --darknes-theme-color: hsl(calc(var(--hue) + 3), 43%, 34%);
+  --darknes-theme-color: hsl(calc(var(--hue) + 3), 43%, 20%);
   --opacity-theme-color: hsla(var(--hue), 66%, 55%, 0.9);
   --theme-desc-color: hsl(calc(var(--hue) - 11), 16%, 20%);
   --theme-title-colot: hsl(calc(var(--hue) - 2), 34%, 13%);
@@ -648,4 +648,32 @@ h1 {
 /* ============================== QUESTIONS END ============================== */
 
 /* ============================== FOOTER START ============================== */
+.footer{
+  padding: 40px 0;
+  background-color: var(--darknes-theme-color);
+}
+
+.desc.footer-desc{
+  color: var(--brightnes-color);
+}
+
+.icon-item-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brightnes-color);
+  font-size: 19px;
+}
+
+.icon-item-wrap>:nth-child(n+2){
+  margin-left: 20px;
+}
+
+.icon-item-wrap a{
+  transition: .25s;
+}
+
+.icon-item-wrap a:hover{
+  transform: translateY(-3px);
+}
 /* ============================== FOOTER END ============================== */
