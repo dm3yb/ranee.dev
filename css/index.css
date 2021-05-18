@@ -263,6 +263,7 @@ span,
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --theme-shadow: hsla(var(--hue), 57%, 21%, 0.3);
   --theme-filter-shadow: hsla(calc(var(--hue) - 1), 57%, 21%, 0.2);
+  --transparent-gray: hsl(calc(var(--hue) - 1), 40%, 98%);
 }
 
 h1 {
@@ -353,6 +354,10 @@ h1 {
   background-color: transparent;
   color: var(--brightnes-color);
 }
+
+.color-words {
+  color: var(--theme-color);
+}
 /* ============================== COMMON END ============================== */
 
 /* ============================== HEADER START ============================== */
@@ -421,6 +426,7 @@ h1 {
 .about {
   padding-top: 120px;
   padding-bottom: 50px;
+  background-color: var(--transparent-gray);
 }
 
 .about-img-box img {
@@ -550,10 +556,96 @@ h1 {
   opacity: 1;
 }
 
-.portfolio-btn{
+.portfolio-btn {
   margin-top: 40px;
 }
 /* ============================== PORTFOLIO END ============================== */
+
+/* ============================== QUESTIONS START ============================== */
+.questions {
+  padding: 75px 0;
+  background-color: var(--transparent-gray);
+}
+
+.questions-wrap img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: drop-shadow(2px 4px 8px var(--theme-filter-shadow));
+}
+
+.desc.questions-desc {
+  margin: 25px 0;
+}
+
+.accordion {
+  width: 500px;
+  cursor: pointer;
+}
+
+.accordion > :nth-child(n + 2) {
+  margin-top: 10px;
+}
+
+.accordion-collapse {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.accordion-item {
+  border-radius: 5px;
+  border: 1px solid var(--theme-shadow);
+  box-shadow: 0 0 2px 0 var(--theme-shadow);
+}
+
+.accordion-title {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subtitle.accordion {
+  font-size: 15px;
+}
+
+.accordion-title i {
+  font-size: 12px;
+}
+
+.active-title {
+  color: var(--theme-color);
+}
+
+.active-title i {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.accordion-content {
+  padding: 20px;
+  background-color: var(--brightnes-color);
+}
+
+.under-question-info {
+  text-align: center;
+}
+
+.title.under-question-title {
+  margin-top: 75px;
+}
+
+.questions-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.questions-btn > i {
+  margin-right: 10px;
+}
+/* ============================== QUESTIONS END ============================== */
 
 /* ============================== FOOTER START ============================== */
 /* ============================== FOOTER END ============================== */
