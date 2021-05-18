@@ -424,8 +424,7 @@ h1 {
 
 /* ============================== ABOUT START ============================== */
 .about {
-  padding-top: 120px;
-  padding-bottom: 75px;
+  padding: 120px 0;
   background-color: var(--transparent-gray);
 }
 
