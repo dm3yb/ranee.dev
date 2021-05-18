@@ -419,6 +419,18 @@ h1 {
   padding: 200px 0;
   background-color: var(--theme-color);
   text-align: center;
+  position: relative;
+}
+
+.particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 /* ============================== HERO END ============================== */
 
@@ -647,16 +659,16 @@ h1 {
 /* ============================== QUESTIONS END ============================== */
 
 /* ============================== FOOTER START ============================== */
-.footer{
+.footer {
   padding: 40px 0;
   background-color: var(--darknes-theme-color);
 }
 
-.desc.footer-desc{
+.desc.footer-desc {
   color: var(--brightnes-color);
 }
 
-.icon-item-wrap{
+.icon-item-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -664,15 +676,16 @@ h1 {
   font-size: 19px;
 }
 
-.icon-item-wrap>:nth-child(n+2){
+.icon-item-wrap > :nth-child(n + 2) {
   margin-left: 20px;
 }
 
-.icon-item-wrap a{
-  transition: .25s;
+.icon-item-wrap a {
+  transition: 0.25s;
 }
 
-.icon-item-wrap a:hover{
+.icon-item-wrap a:hover {
   transform: translateY(-3px);
 }
 /* ============================== FOOTER END ============================== */
+
