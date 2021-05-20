@@ -355,14 +355,6 @@ h1 {
   min-width: 140px;
 }
 
-.btn.short {
-  min-width: 110px;
-}
-
-.btn.video-btn > i {
-  margin-right: 10px;
-}
-
 .btn.theme-btn {
   background-color: var(--theme-color);
   color: var(--brightnes-color);
@@ -375,8 +367,7 @@ h1 {
   color: var(--theme-color);
 }
 
-.btn.large:hover,
-.btn.short:hover {
+.btn.large:hover {
   background-color: transparent;
   color: var(--brightnes-color);
 }
