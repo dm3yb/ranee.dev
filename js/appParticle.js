@@ -27,7 +27,7 @@ particlesJS("particles-js",  {
     },
     move: {
       enable: true,
-      speed: 5,
+      speed: 3,
       direction: "bottom-right",
       random: true,
       straight: false,
@@ -44,7 +44,7 @@ particlesJS("particles-js",  {
       resize: true,
     },
     modes: {
-      grab: { distance: 400, line_linked: { opacity: 0.5 } },
+      grab: { distance: 500, line_linked: { opacity: 0.5 } },
       bubble: { distance: 400, size: 4, duration: 0.3, opacity: 1, speed: 3 },
       repulse: { distance: 200, duration: 0.4 },
       push: { particles_nb: 4 },

@@ -9,6 +9,7 @@ const heroSliderEl = new Swiper(".hero-slider", {
   },
   speed: 800,
   loop: true,
+  allowTouchMove: false,
   autoplay: {
     delay: 2500,
   },
