@@ -1,11 +1,11 @@
 const accordionEl = document.getElementById("accordion");
 const toTopLinkEl = document.getElementById("toTopLink");
-const heroSLiderEl = document.getElementById('heroSlider')
+const heroSLiderEl = document.getElementById("heroSlider");
 
-const heroSliderEl = new Swiper('.hero-slider', {
-  effect: 'fade',
+const heroSliderEl = new Swiper(".hero-slider", {
+  effect: "fade",
   fadeEffect: {
-    crossFade: true
+    crossFade: true,
   },
   speed: 800,
   loop: true,
@@ -42,3 +42,4 @@ accordionEl.addEventListener("click", (e) => {
 });
 
 copyRightYear.textContent = new Date().getFullYear();
+
