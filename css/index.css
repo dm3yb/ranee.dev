@@ -508,6 +508,7 @@ h1, .hero-names {
   opacity: 0;
   transition: 0.25s;
   transform: translateY(-20px);
+  z-index: 9999;
 }
 
 .dropmenu a {
