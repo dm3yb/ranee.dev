@@ -1,5 +1,18 @@
 const accordionEl = document.getElementById("accordion");
 const toTopLinkEl = document.getElementById("toTopLink");
+const heroSLiderEl = document.getElementById('heroSlider')
+
+const heroSliderEl = new Swiper('.hero-slider', {
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  speed: 800,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+  },
+});
 
 let clearTime = null;
 window.addEventListener("scroll", () => {

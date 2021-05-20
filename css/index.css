@@ -288,7 +288,7 @@ span,
   --soft-red: hsl(354, 70%, 54%);
 }
 
-h1 {
+h1, .hero-names {
   font-size: 50px;
   line-height: 1.5;
   color: var(--brightnes-color);
@@ -457,6 +457,10 @@ h1 {
 }
 
 .nav a:hover {
+  color: var(--brightnes-color);
+}
+
+.nav a.active{
   color: var(--brightnes-color);
 }
 
