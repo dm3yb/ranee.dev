@@ -1,6 +1,8 @@
 const accordionEl = document.getElementById("accordion");
 const toTopLinkEl = document.getElementById("toTopLink");
 const heroSLiderEl = document.getElementById("heroSlider");
+const burgerBtnEl = document.getElementById("burgerBtn");
+const burgerMenuEl = document.getElementById("burgerMenu");
 
 const heroSliderEl = new Swiper(".hero-slider", {
   effect: "fade",
@@ -42,5 +44,8 @@ accordionEl.addEventListener("click", (e) => {
   }
 });
 
-copyRightYear.textContent = new Date().getFullYear();
+burgerBtnEl.addEventListener("click", (e) => {
+  document.body.classList.toggle("burger-open");
+});
 
+copyRightYear.textContent = new Date().getFullYear();
