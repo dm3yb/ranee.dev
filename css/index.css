@@ -599,13 +599,8 @@ h1,
   padding: 180px 0;
 }
 
-.services-item-wrap > :nth-child(1) {
-  margin-bottom: 20px;
-}
-
 .services-item {
-  padding: 30px;
-  min-height: 235px;
+  padding: 25px;
   border: 1px solid var(--lightnes-gray);
   transition: 0.25s;
   background: transparent;
