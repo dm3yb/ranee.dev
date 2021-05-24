@@ -235,6 +235,7 @@ html {
 
 body {
   font-family: "Nunito", var(--system-fonts), sans-serif;
+  background-color: var(--brightnes-color);
   color: var(--black);
 }
 
