@@ -1,8 +1,6 @@
 const accordionEl = document.getElementById("accordion");
-const toTopLinkEl = document.getElementById("toTopLink");
 const heroSLiderEl = document.getElementById("heroSlider");
 const burgerBtnEl = document.getElementById("burgerBtn");
-const burgerMenuEl = document.getElementById("burgerMenu");
 
 const heroSliderEl = new Swiper(".hero-slider", {
   effect: "fade",
@@ -15,18 +13,6 @@ const heroSliderEl = new Swiper(".hero-slider", {
   autoplay: {
     delay: 2500,
   },
-});
-
-let clearTime = null;
-window.addEventListener("scroll", () => {
-  clearTimeout(clearTime);
-  clearTime = setTimeout(() => {
-    if (window.pageYOffset > 500) {
-      toTopLinkEl.classList.add("show");
-    } else if (window.pageYOffset < 500) {
-      toTopLinkEl.classList.remove("show");
-    }
-  }, 100);
 });
 
 accordionEl.addEventListener("click", (e) => {
@@ -47,5 +33,7 @@ accordionEl.addEventListener("click", (e) => {
 burgerBtnEl.addEventListener("click", (e) => {
   document.body.classList.toggle("burger-open");
 });
+
+AOS.init();
 
 copyRightYear.textContent = new Date().getFullYear();

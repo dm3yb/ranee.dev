@@ -253,7 +253,7 @@ span,
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track-piece {
@@ -382,36 +382,6 @@ h1,
 
 .color-words {
   color: var(--theme-color);
-}
-
-.to-top-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  bottom: 30px;
-  right: 50px;
-  width: 40px;
-  height: 40px;
-  background-color: var(--theme-color);
-  color: var(--brightnes-color);
-  font-size: 13px;
-  box-shadow: 0 1px 25px 0 var(--transparent-brightnes-color);
-  border-radius: 5px;
-  transition: 0.25s;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.to-top-link.show {
-  opacity: 1;
-  visibility: visible;
-  transition: 0.25s ease-in-out;
-  z-index: 1000;
-}
-
-.to-top-link:hover {
-  transform: translateY(-7px);
 }
 /* ============================== COMMON END ============================== */
 
@@ -751,7 +721,7 @@ h1,
   background-color: var(--brightnes-color);
 }
 
-.desc.accordion{
+.desc.accordion {
   width: 100%;
 }
 
@@ -852,10 +822,6 @@ h1,
   .nav > :nth-last-child(1) {
     margin-bottom: 20px;
   }
-  .to-top-link{
-    bottom: 80px;
-    right: 40px;
-  }
 }
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -869,29 +835,26 @@ h1,
   .accordion-box-wrap {
     text-align: center;
   }
-  .portfolio-item{
+  .portfolio-item {
     height: 250px;
   }
-  .accordion{
+  .accordion {
     width: 100%;
-  }
-  .to-top-link{
-    bottom: 30px;
-    right: 25px;
   }
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .logo-wrap i{
+  .logo-wrap i {
     font-size: 27px;
   }
-  .logo-title{
+  .logo-title {
     font-size: 18px;
   }
   .title {
     font-size: 25px;
   }
-  h1, .hero-names {
+  h1,
+  .hero-names {
     font-size: 40px;
   }
   .hero-text {
@@ -910,29 +873,33 @@ h1,
     font-size: 18px;
   }
   .subtitle.services-subtitle,
-  .subtitle.questions-subtitle, .title.under-question-title {
+  .subtitle.questions-subtitle,
+  .title.under-question-title {
     font-size: 19px;
   }
   .desc.services-desc,
   .desc.questions-desc {
     font-size: 14px;
   }
-  .desc.accordion{
+  .desc.accordion {
     font-size: 15px;
   }
-  .hero{
+  .hero {
     padding: 150px 0;
   }
-  .about, .portfolio, .questions {
+  .about,
+  .portfolio,
+  .questions {
     padding: 65px 0;
   }
-  .services, .banner  {
+  .services,
+  .banner {
     padding: 55px 0;
   }
 }
 /* // XX-Small devices (portrait phones (iPhone 5/5s, SE), less than 320px) */
 @media (max-width: 320px) {
-  .btn.burger-btn{
+  .btn.burger-btn {
     width: 20px;
   }
   h1 {
@@ -941,29 +908,25 @@ h1,
   .desc.hero-desc {
     font-size: 14px;
   }
-  .services-item i{
+  .services-item i {
     font-size: 22px;
   }
   .about-info-box {
     font-size: 14px;
   }
-  .banner-item-box i{
+  .banner-item-box i {
     font-size: 27px;
   }
-  .desc.item-box{
+  .desc.item-box {
     font-size: 14px;
   }
-  .subtitle.accordion{
+  .subtitle.accordion {
     font-size: 14px;
   }
-  .desc.accordion{
+  .desc.accordion {
     font-size: 13px;
   }
-  .desc.footer-desc{
+  .desc.footer-desc {
     font-size: 14px;
-  }
-  .to-top-link{
-    bottom: 20px;
-    right: 20px;
   }
 }
