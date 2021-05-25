@@ -621,6 +621,39 @@ h1,
   text-align: center;
 }
 
+.portfolio-box-wrap{
+  margin-bottom: 20px;
+}
+
+
+.portfolio-box img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: .25s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.portfolio-box h3{
+  padding: 25px 0;
+  background-color: var(--brightnes-color);
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: .25s ease-in-out;
+}
+
+.portfolio-box:hover > img {
+  filter: grayscale(0);
+}
+
+.portfolio-box:hover > h3{
+  background-color: var(--darknes-secondary-theme-color);
+}
+
+.portfolio-btn i{
+  margin-right: 7px;
+}
+
 .portfolio-btn {
   margin-top: 40px;
 }
