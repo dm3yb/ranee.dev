@@ -271,12 +271,10 @@ span,
   --hue: 226;
   --theme-color: hsl(var(--hue), 56%, 51%);
   --darknes-theme-color: hsl(calc(var(--hue) + 3), 43%, 20%);
-  --transparent-darknes-theme-color: hsla(calc(var(--hue) + 3), 43%, 20%, 0.75);
   --theme-desc-color: hsl(calc(var(--hue) - 11), 16%, 20%);
   --theme-title-colot: hsl(calc(var(--hue) - 2), 34%, 13%);
   --btns-color: hsl(calc(var(--hue) - 12), 19%, 29%);
   --brightnes-color: hsl(calc(var(--hue) - 226), 0%, 100%);
-  --transparent-brightnes-color: hsla(calc(var(--hue) - 226), 0%, 100%, 0.1);
   --opacity-brightnes-color: hsla(calc(var(--hue) - 226), 0%, 100%, 0.6);
   --lightnes-gray: hsl(calc(var(--hue) - 226), 0%, 80%);
   --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
@@ -391,7 +389,7 @@ h1,
   position: sticky;
   top: 0;
   background-color: var(--theme-color);
-  padding: 15px 0;
+  padding: 12px 0;
   z-index: 9999;
 }
 
@@ -427,7 +425,7 @@ h1,
 }
 
 .nav a {
-  padding: 15px 10px;
+  padding: 12px 10px;
   transition: 0.25s;
 }
 
@@ -747,7 +745,7 @@ h1,
 
 /* ============================== FOOTER START ============================== */
 .footer {
-  padding: 30px 0;
+  padding: 20px 0;
   background-color: var(--darknes-theme-color);
 }
 
