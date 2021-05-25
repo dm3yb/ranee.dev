@@ -263,7 +263,8 @@ span,
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--darknes-secondary-theme-color);
-  box-shadow: 0 -4px 0 0 var(--darknes-secondary-theme-color), 0 4px 0 0 var(--darknes-secondary-theme-color);
+  box-shadow: 0 -4px 0 0 var(--darknes-secondary-theme-color),
+    0 4px 0 0 var(--darknes-secondary-theme-color);
   border-radius: 999px;
 }
 
@@ -283,8 +284,8 @@ span,
   --theme-filter-shadow: hsla(var(--hue), 0%, 11%, 0.2);
   --scrollbar-track-color: hsl(var(--hue), 0%, 87%);
   --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-  Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 h1,
@@ -342,7 +343,7 @@ h1,
   transition: 0.25s;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: var(--darknes-secondary-theme-color);
 }
 
@@ -386,14 +387,14 @@ h1,
 .logo-wrap i {
   font-size: 28px;
   color: var(--secondary-theme-color);
-  transition: .25s;
+  transition: 0.25s;
 }
 
 .logo-wrap > :nth-child(n + 2) {
   margin-left: 12px;
 }
 
-.logo-wrap:hover > i{
+.logo-wrap:hover > i {
   color: var(--darknes-secondary-theme-color);
 }
 
@@ -481,7 +482,8 @@ h1,
   transform: translateY(0px);
 }
 
-.dropdown:hover > div, .change-lang-nav > li:hover i{
+.dropdown:hover > div,
+.change-lang-nav > li:hover i {
   color: var(--darknes-secondary-theme-color);
 }
 
@@ -551,7 +553,7 @@ h1,
   padding: 180px 0;
 }
 
-.services-item-box{
+.services-item-box {
   margin-bottom: 20px;
 }
 
@@ -564,7 +566,7 @@ h1,
   background: transparent;
 }
 
-.subtitle.services-subtitle{
+.subtitle.services-subtitle {
   margin: 12px 0;
 }
 
@@ -578,7 +580,7 @@ h1,
   box-shadow: 0 2px 10px 0 var(--theme-shadow);
 }
 
-.services-item:hover > i{
+.services-item:hover > i {
   color: var(--darknes-secondary-theme-color);
 }
 /* ============================== SERVICES END ============================== */
@@ -590,8 +592,8 @@ h1,
   text-align: center;
 }
 
-.banner-item-box i{
-  transition: .25s ease-in-out;
+.banner-item-box i {
+  transition: 0.25s ease-in-out;
 }
 
 .banner-item-box i {
@@ -599,7 +601,7 @@ h1,
   color: var(--secondary-theme-color);
 }
 
-.banner-item-box:hover > i{
+.banner-item-box:hover > i {
   color: var(--darknes-secondary-theme-color);
   transform: translateY(-5px);
 }
@@ -615,31 +617,8 @@ h1,
 
 /* ============================== PORTFOLIO START ============================== */
 .portfolio {
-  padding: 150px 0;
+  padding: 200px 0;
   text-align: center;
-}
-
-.portfolio-item-wrap > :nth-child(n + 1) {
-  margin-bottom: 20px;
-}
-
-.portfolio-item {
-  height: 350px;
-  border: 1px solid var(--lightnes-gray);
-  background-color: var(--darknes-theme-color);
-  position: relative;
-  filter: grayscale(100%);
-  transition: 0.3s ease-in-out;
-}
-
-.portfolio-item:hover {
-  filter: grayscale(0%);
-}
-
-.portfolio-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .portfolio-btn {
@@ -681,8 +660,8 @@ h1,
 
 .accordion-item {
   border-radius: 5px;
-  border: 1px solid var(--lightnes-gray);
-  box-shadow: 0 0 2px 0 var(--theme-shadow);
+  border: 1px solid var(--stroke-color);
+  box-shadow: 0 0 3px 0 var(--theme-shadow);
 }
 
 .accordion-title {
@@ -702,7 +681,7 @@ h1,
 }
 
 .active-title {
-  color: var(--theme-color);
+  color: var(--darknes-secondary-theme-color);
 }
 
 .active-title i {
@@ -712,7 +691,7 @@ h1,
 
 .accordion-content {
   padding: 20px;
-  background-color: var(--brightnes-color);
+  background-color: var(--lightnes-gray);
 }
 
 .desc.accordion {
@@ -730,11 +709,11 @@ h1,
 .questions-btn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .questions-btn > i {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 /* ============================== QUESTIONS END ============================== */
 
@@ -761,7 +740,7 @@ h1,
 }
 
 .fa-heart {
-  color: var(--soft-red);
+  color: var(--darknes-secondary-theme-color);
   margin: 0 3px;
 }
 
@@ -772,6 +751,7 @@ h1,
 
 .icon-item-wrap a:hover {
   transform: translateY(-3px);
+  color: var(--darknes-secondary-theme-color);
 }
 /* ============================== FOOTER END ============================== */
 /* // XX-Large devices (larger desktops) */
