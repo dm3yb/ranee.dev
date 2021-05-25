@@ -270,7 +270,7 @@ span,
 :root {
   --hue: 0;
   --theme-color: hsl(var(--hue), 0%, 11%);
-  --darknes-theme-color: hsl(var(--hue), 0%, 5%);
+  --darknes-theme-color: hsl(var(--hue), 0%, 8%);
   --secondary-theme-color: hsl(calc(var(--hue) + 155), 72%, 62%);
   --darknes-secondary-theme-color: hsl(calc(var(--hue) + 155), 72%, 47%);
   --brightnes-color: hsl(var(--hue), 0%, 100%);
@@ -279,9 +279,8 @@ span,
   --lightnes-gray: hsl(var(--hue), 0%, 93%);
   --transparent-gray: hsl(var(--hue), 0%, 90%);
   --stroke-color: hsl(var(--hue), 0%, 75%);
-  --theme-shadow: hsla(var(--hue), 57%, 21%, 0.2);
-  --theme-filter-shadow: hsla(calc(var(--hue) - 1), 57%, 21%, 0.2);
-
+  --theme-shadow: hsla(var(--hue), 57%, 21%, 0.25);
+  --theme-filter-shadow: hsla(var(--hue), 0%, 11%, 0.2);
   --scrollbar-track-color: hsl(var(--hue), 0%, 87%);
   --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
   Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
@@ -552,30 +551,35 @@ h1,
   padding: 180px 0;
 }
 
+.services-item-box{
+  margin-bottom: 20px;
+}
+
 .services-item {
-  padding: 25px;
+  padding: 22px;
+  height: 100%;
   border: 1px solid var(--stroke-color);
   border-radius: 5px;
   transition: 0.25s;
   background: transparent;
 }
 
-.services-item:hover::after {
-  visibility: visible;
-  opacity: 1;
-}
-
-.services-item > :nth-child(n + 1) {
-  margin-top: 15px;
+.subtitle.services-subtitle{
+  margin: 12px 0;
 }
 
 .services-item i {
   font-size: 27px;
-  color: var(--theme-color);
+  transition: 0.25s;
+  color: var(--secondary-theme-color);
 }
 
 .services-item:hover {
   box-shadow: 0 2px 10px 0 var(--theme-shadow);
+}
+
+.services-item:hover > i{
+  color: var(--darknes-secondary-theme-color);
 }
 /* ============================== SERVICES END ============================== */
 
