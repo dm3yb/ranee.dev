@@ -235,7 +235,7 @@ html {
 
 body {
   font-family: "Nunito", var(--system-fonts), sans-serif;
-  background-color: var(--brightnes-color);
+  background-color: var(--lightnes-gray);
   color: var(--black);
 }
 
@@ -249,7 +249,7 @@ span,
 }
 
 ::selection {
-  background-color: var(--theme-color);
+  background-color: var(--darknes-secondary-theme-color);
   color: var(--brightnes-color);
 }
 
@@ -262,47 +262,49 @@ span,
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--theme-color);
-  box-shadow: 0 -4px 0 0 var(--theme-color), 0 4px 0 0 var(--theme-color);
+  background-color: var(--darknes-secondary-theme-color);
+  box-shadow: 0 -4px 0 0 var(--darknes-secondary-theme-color), 0 4px 0 0 var(--darknes-secondary-theme-color);
   border-radius: 999px;
 }
 
 :root {
-  --hue: 226;
-  --theme-color: hsl(var(--hue), 56%, 51%);
-  --darknes-theme-color: hsl(calc(var(--hue) + 3), 43%, 20%);
-  --theme-desc-color: hsl(calc(var(--hue) - 11), 16%, 20%);
-  --theme-title-colot: hsl(calc(var(--hue) - 2), 34%, 13%);
-  --btns-color: hsl(calc(var(--hue) - 12), 19%, 29%);
-  --brightnes-color: hsl(calc(var(--hue) - 226), 0%, 100%);
-  --opacity-brightnes-color: hsla(calc(var(--hue) - 226), 0%, 100%, 0.6);
-  --lightnes-gray: hsl(calc(var(--hue) - 226), 0%, 80%);
-  --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --theme-shadow: hsla(var(--hue), 57%, 21%, 0.3);
+  --hue: 0;
+  --theme-color: hsl(var(--hue), 0%, 11%);
+  --darknes-theme-color: hsl(var(--hue), 0%, 5%);
+  --secondary-theme-color: hsl(calc(var(--hue) + 155), 72%, 62%);
+  --darknes-secondary-theme-color: hsl(calc(var(--hue) + 155), 72%, 47%);
+  --brightnes-color: hsl(var(--hue), 0%, 100%);
+  --transparent-brightnes-color: hsl(var(--hue), 0%, 68%);
+  --opacity-brightnes-color: hsla(var(--hue), 0%, 100%, 0.1);
+  --lightnes-gray: hsl(var(--hue), 0%, 93%);
+  --transparent-gray: hsl(var(--hue), 0%, 90%);
+  --stroke-color: hsl(var(--hue), 0%, 75%);
+  --theme-shadow: hsla(var(--hue), 57%, 21%, 0.2);
   --theme-filter-shadow: hsla(calc(var(--hue) - 1), 57%, 21%, 0.2);
-  --transparent-gray: hsl(calc(var(--hue) - 1), 45%, 97%);
+
   --scrollbar-track-color: hsl(var(--hue), 0%, 87%);
-  --soft-red: hsl(354, 70%, 54%);
+  --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+  Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 h1,
 .hero-names {
   font-size: 50px;
   line-height: 1.5;
+  font-weight: 700;
   color: var(--brightnes-color);
 }
 
 .desc {
   line-height: 1.4;
-  color: var(--theme-desc-color);
+  color: var(--darknes-theme-color);
 }
 
 .desc.hero-desc {
   font-size: 18px;
   margin: 25px 0;
-  color: var(--opacity-brightnes-color);
+  color: var(--transparent-brightnes-color);
 }
 
 .hero-text {
@@ -323,42 +325,26 @@ h1,
   text-align: center;
   font-weight: 700;
   margin-bottom: 50px;
-  color: var(--theme-title-color);
+  color: var(--darknes-theme-color);
 }
 
 .btn {
   cursor: pointer;
   text-align: center;
-  min-width: 140px;
+  min-width: 200px;
   padding: 9px 20px;
   font-family: inherit;
-  border: 1px solid var(--brightnes-color);
-  border-radius: 5px;
+  border: 1px solid var(--secondary-theme-color);
+  border-radius: 999px;
   font-size: 15px;
   font-weight: 700;
-  color: var(--btns-color);
-  background-color: var(--brightnes-color);
-  transition: 0.25s ease-in-out;
+  color: var(--darknes-theme-color);
+  background-color: var(--secondary-theme-color);
+  transition: 0.25s;
 }
 
-.btn.transparent {
-  background-color: transparent;
-  color: var(--brightnes-color);
-}
-
-.btn.transparent:hover {
-  background-color: var(--theme-color);
-  color: var(--white);
-}
-
-.btn.large {
-  min-width: 140px;
-}
-
-.btn.theme-btn {
-  background-color: var(--theme-color);
-  color: var(--brightnes-color);
-  border: 1px solid transparent;
+.btn:hover{
+  background-color: var(--darknes-secondary-theme-color);
 }
 
 .btn.burger-btn {
@@ -367,20 +353,10 @@ h1,
   justify-content: center;
 }
 
-.btn.theme-btn:hover {
-  border: 1px solid var(--theme-color);
-  background-color: transparent;
-  color: var(--theme-color);
-}
-
-.btn.large:hover,
-.btn.burger-btn:hover {
-  background-color: transparent;
-  color: var(--brightnes-color);
-}
-
 .color-words {
-  color: var(--theme-color);
+  color: var(--darknes-secondary-theme-color);
+  font-weight: 700;
+  font-style: italic;
 }
 /* ============================== COMMON END ============================== */
 
@@ -388,8 +364,8 @@ h1,
 .header {
   position: sticky;
   top: 0;
-  background-color: var(--theme-color);
   padding: 12px 0;
+  background-color: var(--darknes-theme-color);
   z-index: 9999;
 }
 
@@ -410,11 +386,16 @@ h1,
 
 .logo-wrap i {
   font-size: 28px;
-  color: var(--brightnes-color);
+  color: var(--secondary-theme-color);
+  transition: .25s;
 }
 
 .logo-wrap > :nth-child(n + 2) {
   margin-left: 12px;
+}
+
+.logo-wrap:hover > i{
+  color: var(--darknes-secondary-theme-color);
 }
 
 .nav.nav-desc {
@@ -423,38 +404,33 @@ h1,
   position: absolute;
   left: 40%;
   transform: translateX(-40%);
-  color: var(--opacity-brightnes-color);
+  color: var(--brightnes-color);
 }
 
-.nav a {
-  padding: 12px 10px;
+.nav > li > a {
+  position: relative;
+  display: flex;
+  justify-content: center;
   transition: 0.25s;
+  padding: 12px;
 }
 
 .nav > :nth-child(n + 2) {
   margin-left: 20px;
 }
 
-.nav a:hover {
-  color: var(--brightnes-color);
+.nav > li > a:hover {
+  color: var(--darknes-secondary-theme-color);
 }
 
 .nav a.active {
-  color: var(--brightnes-color);
+  color: var(--darknes-secondary-theme-color);
 }
 
 .change-lang-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.change-lang-wrap img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 15px;
 }
 
 .change-lang-nav li {
@@ -478,9 +454,9 @@ h1,
   position: absolute;
   left: 0;
   top: 100%;
-  background-color: var(--brightnes-color);
+  background-color: var(--darknes-theme-color);
   border-radius: 5px;
-  box-shadow: 0 2px 10px 0 var(--theme-shadow);
+  box-shadow: 0 2px 10px 0 var(--opacity-brightnes-color);
   visibility: hidden;
   opacity: 0;
   transition: 0.15s;
@@ -492,11 +468,11 @@ h1,
   padding: 10px 20px;
   display: flex;
   justify-content: center;
-  color: var(--darknes-theme-color);
+  color: var(--brightnes-color);
 }
 
 .dropmenu a:hover {
-  color: var(--theme-color);
+  color: var(--darknes-secondary-theme-color);
 }
 
 .change-lang-nav > li:hover > .dropmenu,
@@ -504,6 +480,10 @@ h1,
   visibility: visible;
   opacity: 1;
   transform: translateY(0px);
+}
+
+.dropdown:hover > div, .change-lang-nav > li:hover i{
+  color: var(--darknes-secondary-theme-color);
 }
 
 .change-lang-nav > li:hover i {
@@ -526,11 +506,22 @@ h1,
 
 /* ============================== HERO START ============================== */
 .hero {
-  padding: 200px 0;
-  background-color: var(--theme-color);
+  padding: 230px 0;
   text-align: center;
   position: relative;
+  background: url(../img/Original/hero.jpg) no-repeat 50% / 100%;
   z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(rgb(25 25 25 / 90%), rgb(0 0 0 / 50%));
 }
 /* ============================== HERO END ============================== */
 
@@ -563,7 +554,7 @@ h1,
 
 .services-item {
   padding: 25px;
-  border: 1px solid var(--lightnes-gray);
+  border: 1px solid var(--stroke-color);
   border-radius: 5px;
   transition: 0.25s;
   background: transparent;
@@ -806,7 +797,7 @@ h1,
   .burger-open .burger-menu {
     transform: translateY(0);
   }
-  .nav.nav-desc{
+  .nav.nav-desc {
     position: static;
     transform: translateX(0);
   }
