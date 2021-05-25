@@ -277,7 +277,7 @@ span,
   --darknes-secondary-theme-color: hsl(calc(var(--hue) + 155), 72%, 47%);
   --brightnes-color: hsl(var(--hue), 0%, 100%);
   --transparent-brightnes-color: hsl(var(--hue), 0%, 68%);
-  --opacity-brightnes-color: hsla(var(--hue), 0%, 100%, 0.1);
+  --opacity-gray-color: hsla(var(--hue), 0%, 85%, 0.1);
   --lightnes-gray: hsl(var(--hue), 0%, 93%);
   --transparent-gray: hsl(var(--hue), 0%, 90%);
   --stroke-color: hsl(var(--hue), 0%, 75%);
@@ -457,7 +457,7 @@ h1,
   top: 100%;
   background-color: var(--darknes-theme-color);
   border-radius: 5px;
-  box-shadow: 0 2px 10px 0 var(--opacity-brightnes-color);
+  box-shadow: 0 1px 5px 0 var(--opacity-gray-color);
   visibility: hidden;
   opacity: 0;
   transition: 0.15s;
@@ -511,7 +511,7 @@ h1,
   padding: 255px 0;
   text-align: center;
   position: relative;
-  background: url(../img/Original/hero.jpg) no-repeat 100% / 100%;
+  background: url(../img/Original/hero.jpg) no-repeat center / cover;
   z-index: 1;
 }
 
@@ -538,22 +538,22 @@ h1,
 }
 
 .scroll-down i {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--opacity-secondary-theme-color);
-  animation: arrow-down 2s ease-in-out infinite alternate;
+  animation: arrow-down 2.5s ease-in-out infinite alternate;
 }
 
 @keyframes arrow-down {
   0% {
     transform: translate(0, -20px);
-    opacity: 0.2;
+    opacity: 0.1;
   }
   50% {
     opacity: 1;
   }
   100% {
     transform: translate(0, 20px);
-    opacity: 0.2;
+    opacity: 0.1;
   }
 }
 /* ============================== HERO END ============================== */
