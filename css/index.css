@@ -273,6 +273,7 @@ span,
   --theme-color: hsl(var(--hue), 0%, 11%);
   --darknes-theme-color: hsl(var(--hue), 0%, 8%);
   --secondary-theme-color: hsl(calc(var(--hue) + 155), 72%, 62%);
+  --opacity-secondary-theme-color: hsla(calc(var(--hue) + 155), 72%, 62%, 0.5);
   --darknes-secondary-theme-color: hsl(calc(var(--hue) + 155), 72%, 47%);
   --brightnes-color: hsl(var(--hue), 0%, 100%);
   --transparent-brightnes-color: hsl(var(--hue), 0%, 68%);
@@ -507,10 +508,10 @@ h1,
 
 /* ============================== HERO START ============================== */
 .hero {
-  padding: 230px 0;
+  padding: 255px 0;
   text-align: center;
   position: relative;
-  background: url(../img/Original/hero.jpg) no-repeat 50% / 100%;
+  background: url(../img/Original/hero.jpg) no-repeat 100% / 100%;
   z-index: 1;
 }
 
@@ -522,7 +523,38 @@ h1,
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(rgb(25 25 25 / 90%), rgb(0 0 0 / 50%));
+  background: linear-gradient(rgb(25 25 25 / 90%), rgb(0 0 0 / 75%));
+}
+
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-down i {
+  font-size: 18px;
+  color: var(--opacity-secondary-theme-color);
+  animation: arrow-down 2s ease-in-out infinite alternate;
+}
+
+@keyframes arrow-down {
+  0% {
+    transform: translate(0, -20px);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 20px);
+    opacity: 0.2;
+  }
 }
 /* ============================== HERO END ============================== */
 
@@ -621,36 +653,35 @@ h1,
   text-align: center;
 }
 
-.portfolio-box-wrap{
+.portfolio-box-wrap {
   margin-bottom: 20px;
 }
 
-
-.portfolio-box img{
+.portfolio-box img {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  transition: .25s ease-in-out;
+  transition: 0.25s ease-in-out;
   filter: grayscale(100%);
 }
 
-.portfolio-box h3{
+.portfolio-box h3 {
   padding: 25px 0;
   background-color: var(--brightnes-color);
   font-size: 18px;
   text-transform: uppercase;
-  transition: .25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .portfolio-box:hover > img {
   filter: grayscale(0);
 }
 
-.portfolio-box:hover > h3{
+.portfolio-box:hover > h3 {
   background-color: var(--darknes-secondary-theme-color);
 }
 
-.portfolio-btn i{
+.portfolio-btn i {
   margin-right: 7px;
 }
 
