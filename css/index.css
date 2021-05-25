@@ -585,18 +585,27 @@ h1,
 
 /* ============================== BANNER START ============================== */
 .banner {
-  padding: 75px 0;
+  padding: 50px 0;
   background-color: var(--transparent-gray);
   text-align: center;
 }
 
+.banner-item-box i{
+  transition: .25s ease-in-out;
+}
+
 .banner-item-box i {
   font-size: 32px;
-  color: var(--theme-color);
+  color: var(--secondary-theme-color);
+}
+
+.banner-item-box:hover > i{
+  color: var(--darknes-secondary-theme-color);
+  transform: translateY(-5px);
 }
 
 .subtitle.item-box {
-  margin: 20px 0;
+  margin: 17px 0;
 }
 
 .desc.item-box {
