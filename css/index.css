@@ -350,8 +350,21 @@ h1,
 
 .btn.burger-btn {
   min-width: 50px;
+  background-color: transparent;
+  color: var(--brightnes-color);
+  border: 1px solid transparent;
+  font-size: 18px;
   align-items: center;
   justify-content: center;
+}
+
+.btn > i {
+  margin-right: 15px;
+  font-size: 17px;
+}
+
+.btn.burger-btn > i {
+  margin-right: initial;
 }
 
 .color-words {
@@ -585,35 +598,122 @@ h1,
   padding: 180px 0;
 }
 
-.services-item-box {
-  margin-bottom: 20px;
+.services-box-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 
-.services-item {
-  padding: 22px;
+.services-box {
+  width: 190px;
   height: 100%;
-  border: 1px solid var(--stroke-color);
-  border-radius: 5px;
-  transition: 0.25s;
-  background: transparent;
+  text-align: center;
+  padding: 35px 30px;
+  filter: grayscale(100%);
+  transition: .25s ease-in-out;
+  background-color: var(--transparent-gray);
 }
 
-.subtitle.services-subtitle {
-  margin: 12px 0;
+.services-box i {
+  font-size: 32px;
+  margin-bottom: 12px;
 }
 
-.services-item i {
-  font-size: 27px;
-  transition: 0.25s;
-  color: var(--secondary-theme-color);
+.services-box.html:hover {
+  --html-color: hsl(17, 80%, 50%);
+  --html-dark-color: hsl(17, 60%, 50%);
+  filter: grayscale(0%);
+  color: var(--html-color);
+  box-shadow: 17px 17px 0 0 var(--html-dark-color);
 }
 
-.services-item:hover {
-  box-shadow: 0 2px 10px 0 var(--theme-shadow);
+.services-box.css-style:hover {
+  --css-color: hsl(224, 80%, 50%);
+  --css-dark-color: hsl(224, 60%, 50%);
+  filter: grayscale(0%);
+  color: var(--css-color);
+  box-shadow: 17px 17px 0 0 var(--css-dark-color);
 }
 
-.services-item:hover > i {
-  color: var(--darknes-secondary-theme-color);
+.services-box.js:hover {
+  --js-color: hsl(45, 80%, 50%);
+  --js-dark-color: hsl(45, 70%, 50%);
+  filter: grayscale(0%);
+  color: var(--js-color);
+  box-shadow: 17px 17px 0 0 var(--js-dark-color);
+}
+
+.services-box.react:hover {
+  --react-color: hsl(155, 60%, 50%);
+  --react-dark-color: hsl(155, 40%, 50%);
+  filter: grayscale(0%);
+  color: var(--react-color);
+  box-shadow: 17px 17px 0 0 var(--react-dark-color);
+}
+
+.services-box.bootstrap:hover {
+  --bst-color: hsl(265, 40%, 50%);
+  --bst-dark-color: hsl(265, 30%, 50%);
+  filter: grayscale(0%);
+  color: var(--bst-color);
+  box-shadow: 17px 17px 0 0 var(--bst-dark-color);
+}
+
+.services-box.node-js:hover {
+  --node-js-color: hsl(100, 45%, 50%);
+  --node-js-dark-color: hsl(100, 30%, 50%);
+  filter: grayscale(0%);
+  color: var(--node-js-color);
+  box-shadow: 17px 17px 0 0 var(--node-js-dark-color);
+}
+
+.services-box.figma:hover {
+  --figma-color: hsl(0, 0%, 20%);
+  --figma-dark-color: hsl(0, 0%, 25%);
+  filter: grayscale(0%);
+  color: var(--figma-color);
+  box-shadow: 17px 17px 0 0 var(--figma-dark-color);
+}
+
+.services-box.adobe-xd:hover {
+  --adobe-xd-color: hsl(285, 50%, 50%);
+  --adobe-xd-dark-color: hsl(285, 40%, 50%);
+  filter: grayscale(0%);
+  color: var(--adobe-xd-color);
+  box-shadow: 17px 17px 0 0 var(--adobe-xd-dark-color);
+}
+
+.services-box.photoshop:hover {
+  --photoshop-color: hsl(230, 50%, 30%);
+  --photoshop-dark-color: hsl(230, 50%, 30%);
+  filter: grayscale(0%);
+  color: var(--photoshop-color);
+  box-shadow: 17px 17px 0 0 var(--photoshop-dark-color);
+}
+
+.services-box.git:hover {
+  --git-color: hsl(9, 87%, 57%);
+  --git-dark-color: hsl(9, 50%, 50%);
+  filter: grayscale(0%);
+  color: var(--git-color);
+  box-shadow: 17px 17px 0 0 var(--git-dark-color);
+}
+
+.services-box.gulp:hover {
+  --gulp-color: hsl(360, 59%, 50%);
+  --gulp-dark-color: hsl(360, 50%, 50%);
+  filter: grayscale(0%);
+  color: var(--gulp-color);
+  box-shadow: 17px 17px 0 0 var(--gulp-dark-color);
+}
+
+.services-box.performance:hover {
+  --performance-color: hsl(180, 45%, 50%);
+  --performance-dark-color: hsl(180, 30%, 50%);
+  filter: grayscale(0%);
+  color: var(--performance-color);
+  box-shadow: 17px 17px 0 0 var(--performance-dark-color);
 }
 /* ============================== SERVICES END ============================== */
 
@@ -679,10 +779,6 @@ h1,
 
 .portfolio-box:hover > h3 {
   background-color: var(--darknes-secondary-theme-color);
-}
-
-.portfolio-btn i {
-  margin-right: 7px;
 }
 
 .portfolio-btn {
@@ -775,10 +871,6 @@ h1,
   align-items: center;
   justify-content: center;
 }
-
-.questions-btn > i {
-  margin-right: 15px;
-}
 /* ============================== QUESTIONS END ============================== */
 
 /* ============================== FOOTER START ============================== */
@@ -864,6 +956,12 @@ h1,
   .nav > :nth-last-child(1) {
     margin-bottom: 20px;
   }
+  .about-img-box {
+    margin-bottom: 25px;
+  }
+  .questions-wrap img {
+    margin-top: 35px;
+  }
 }
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -914,12 +1012,6 @@ h1,
   .subtitle.item-box {
     font-size: 18px;
   }
-  .subtitle.services-subtitle,
-  .subtitle.questions-subtitle,
-  .title.under-question-title {
-    font-size: 19px;
-  }
-  .desc.services-desc,
   .desc.questions-desc {
     font-size: 14px;
   }
@@ -949,9 +1041,6 @@ h1,
   }
   .desc.hero-desc {
     font-size: 14px;
-  }
-  .services-item i {
-    font-size: 22px;
   }
   .about-info-box {
     font-size: 14px;
