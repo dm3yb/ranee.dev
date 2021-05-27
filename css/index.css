@@ -325,8 +325,21 @@ h1,
   line-height: 1.2;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 7%;
+  padding-bottom: 10px;
   color: var(--darknes-theme-color);
+  position: relative;
+}
+
+.title::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--darknes-secondary-theme-color);
+  width: 5%;
+  height: 2px;
 }
 
 .btn {
@@ -620,10 +633,13 @@ h1,
   margin-bottom: 12px;
 }
 
+.services-box:hover{
+  filter: grayscale(0%);
+}
+
 .services-box.html:hover {
   --html-color: hsl(17, 80%, 50%);
   --html-dark-color: hsl(17, 60%, 50%);
-  filter: grayscale(0%);
   color: var(--html-color);
   box-shadow: 17px 17px 0 0 var(--html-dark-color);
 }
@@ -631,7 +647,6 @@ h1,
 .services-box.css-style:hover {
   --css-color: hsl(224, 80%, 50%);
   --css-dark-color: hsl(224, 60%, 50%);
-  filter: grayscale(0%);
   color: var(--css-color);
   box-shadow: 17px 17px 0 0 var(--css-dark-color);
 }
@@ -639,7 +654,6 @@ h1,
 .services-box.js:hover {
   --js-color: hsl(45, 80%, 50%);
   --js-dark-color: hsl(45, 70%, 50%);
-  filter: grayscale(0%);
   color: var(--js-color);
   box-shadow: 17px 17px 0 0 var(--js-dark-color);
 }
@@ -647,7 +661,6 @@ h1,
 .services-box.react:hover {
   --react-color: hsl(155, 60%, 50%);
   --react-dark-color: hsl(155, 40%, 50%);
-  filter: grayscale(0%);
   color: var(--react-color);
   box-shadow: 17px 17px 0 0 var(--react-dark-color);
 }
@@ -655,7 +668,6 @@ h1,
 .services-box.bootstrap:hover {
   --bst-color: hsl(265, 40%, 50%);
   --bst-dark-color: hsl(265, 30%, 50%);
-  filter: grayscale(0%);
   color: var(--bst-color);
   box-shadow: 17px 17px 0 0 var(--bst-dark-color);
 }
@@ -663,15 +675,13 @@ h1,
 .services-box.node-js:hover {
   --node-js-color: hsl(100, 45%, 50%);
   --node-js-dark-color: hsl(100, 30%, 50%);
-  filter: grayscale(0%);
   color: var(--node-js-color);
   box-shadow: 17px 17px 0 0 var(--node-js-dark-color);
 }
 
 .services-box.figma:hover {
-  --figma-color: hsl(0, 0%, 20%);
-  --figma-dark-color: hsl(0, 0%, 25%);
-  filter: grayscale(0%);
+  --figma-color: hsl(330, 45%, 50%);
+  --figma-dark-color: hsl(330, 30%, 50%);
   color: var(--figma-color);
   box-shadow: 17px 17px 0 0 var(--figma-dark-color);
 }
@@ -679,7 +689,6 @@ h1,
 .services-box.adobe-xd:hover {
   --adobe-xd-color: hsl(285, 50%, 50%);
   --adobe-xd-dark-color: hsl(285, 40%, 50%);
-  filter: grayscale(0%);
   color: var(--adobe-xd-color);
   box-shadow: 17px 17px 0 0 var(--adobe-xd-dark-color);
 }
@@ -687,7 +696,6 @@ h1,
 .services-box.photoshop:hover {
   --photoshop-color: hsl(230, 50%, 30%);
   --photoshop-dark-color: hsl(230, 50%, 30%);
-  filter: grayscale(0%);
   color: var(--photoshop-color);
   box-shadow: 17px 17px 0 0 var(--photoshop-dark-color);
 }
@@ -695,7 +703,6 @@ h1,
 .services-box.git:hover {
   --git-color: hsl(9, 87%, 57%);
   --git-dark-color: hsl(9, 50%, 50%);
-  filter: grayscale(0%);
   color: var(--git-color);
   box-shadow: 17px 17px 0 0 var(--git-dark-color);
 }
@@ -703,15 +710,13 @@ h1,
 .services-box.gulp:hover {
   --gulp-color: hsl(360, 59%, 50%);
   --gulp-dark-color: hsl(360, 50%, 50%);
-  filter: grayscale(0%);
   color: var(--gulp-color);
   box-shadow: 17px 17px 0 0 var(--gulp-dark-color);
 }
 
 .services-box.performance:hover {
-  --performance-color: hsl(180, 45%, 50%);
-  --performance-dark-color: hsl(180, 30%, 50%);
-  filter: grayscale(0%);
+  --performance-color: hsl(0, 75%, 40%);
+  --performance-dark-color: hsl(0, 70%, 40%);
   color: var(--performance-color);
   box-shadow: 17px 17px 0 0 var(--performance-dark-color);
 }
@@ -895,7 +900,8 @@ h1,
   margin-left: 10px;
 }
 
-.fa-heart {
+.footer-desc i {
+  font-size: 18px;
   color: var(--darknes-secondary-theme-color);
   margin: 0 3px;
 }
@@ -959,6 +965,9 @@ h1,
   .about-img-box {
     margin-bottom: 25px;
   }
+  .banner-item-wrap {
+    justify-content: space-evenly;
+  }
   .questions-wrap img {
     margin-top: 35px;
   }
@@ -1008,6 +1017,9 @@ h1,
   }
   .banner-item-wrap > :nth-child(n + 2) {
     margin-top: 15px;
+  }
+  .services-box{
+    width: 100%;
   }
   .subtitle.item-box {
     font-size: 18px;

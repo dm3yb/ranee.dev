@@ -31,21 +31,41 @@
             <h2 class="logo-title">Ranee.dev</h2>
           </a>
           <div class="burger-menu" id="burgerMenu">
-            <ul class="nav nav-desc">
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#questions">Questions</a></li>
+            <ul class="nav nav-desc" id="navLinks">
+              <li>
+                <a href="#hero" class="active"
+                  ><span data-i18n="home">Home</span></a
+                >
+              </li>
+              <li>
+                <a href="#about"><span data-i18n="about">About</span></a>
+              </li>
+              <li>
+                <a href="#services"
+                  ><span data-i18n="services">Services</span></a
+                >
+              </li>
+              <li>
+                <a href="#portfolio"
+                  ><span data-i18n="portfolio">Portfolio</span></a
+                >
+              </li>
+              <li>
+                <a href="#questions"
+                  ><span data-i18n="questions">Questions</span></a
+                >
+              </li>
             </ul>
             <div class="change-lang-wrap">
-              <ul class="change-lang-nav">
+              <ul class="change-lang-nav" id="changeLangs">
                 <li class="dropdown">
-                  <div>English<i class="fas fa-chevron-down"></i></div>
+                  <div data-lang="current">
+                    <span>EN</span><i class="fas fa-chevron-down"></i>
+                  </div>
                   <ul class="dropmenu">
-                    <li><a href="#">Русский</a></li>
-                    <li><a href="#">Українська</a></li>
-                    <li><a href="#">Slovenčina</a></li>
+                    <li><a href="#" data-lang="ru">RU</a></li>
+                    <li><a href="#" data-lang="uk">UA</a></li>
+                    <li><a href="#" data-lang="sk">SK</a></li>
                   </ul>
                 </li>
               </ul>
@@ -73,6 +93,7 @@
             data-aos-delay="50"
             data-aos-duration="550"
             data-aos-once="true"
+            data-i18n="hello"
             >Hello I'm</span
           >
           <div
@@ -85,13 +106,22 @@
           >
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <h1>Ranee</h1>
+                <h1><span data-i18n="name">Ranee / Dmitry</span></h1>
               </div>
               <div class="swiper-slide">
-                <h2 class="hero-names">Junior Front-End Developer</h2>
+                <h2 class="hero-names">
+                  <span data-i18n="name2">Junior Front-End Developer</span>
+                </h2>
               </div>
               <div class="swiper-slide">
-                <h2 class="hero-names">UX/UI Designer</h2>
+                <h2 class="hero-names">
+                  <span data-i18n="name3">UX/UI Developer</span>
+                </h2>
+              </div>
+              <div class="swiper-slide">
+                <h2 class="hero-names">
+                  <span data-i18n="name4">Graphic Designer</span>
+                </h2>
               </div>
             </div>
           </div>
@@ -102,9 +132,14 @@
             data-aos-duration="750"
             data-aos-once="true"
           >
-            This is one page website about me, my portfolio and abilities ..
+            <span data-i18n="heroSloganParagraph1"
+              >Graphic Designer This is one page website about me, my portfolio
+              and abilities ..
+            </span>
             <br />
-            shortly saying "calling card" website.
+            <span data-i18n="heroSloganParagraph2"
+              >shortly saying "calling card" website.</span
+            >
           </p>
           <button
             class="btn large"
@@ -113,7 +148,8 @@
             data-aos-duration="850"
             data-aos-once="true"
           >
-            <i class="fas fa-file-download"></i>Dowload CV
+            <i class="fas fa-file-download"></i
+            ><span data-i18n="btnCV">Dowload CV</span>
           </button>
           <div class="scroll-down">
             <i class="fas fa-angle-double-down"></i>
@@ -123,7 +159,7 @@
     </section>
     <main class="about" id="about">
       <div class="container">
-        <h2 class="title">About me</h2>
+        <h2 class="title"><span data-i18n="about">About me</span></h2>
         <div class="about-wrapper align-items-center row">
           <div class="about-img-box col-sm-12 col-lg-6">
             <img
@@ -141,22 +177,31 @@
             data-aos-once="true"
           >
             <p class="desc">
-              Hey! My name is Dmitry. I am a young, ambitious and determined web
-              developer.
+              <span data-i18n="aboutParagraph1">
+                Hey! My name is Dmitry. I am a young, ambitious and determined
+                web developer.</span
+              >
             </p>
             <p class="desc">
-              Who is a web developer? A web developer is programmer which builds
-              and maintains websites with the client and consumer in mind. That
-              is, the end result must include products and services.
+              <span data-i18n="aboutParagraph2">
+                Who is a web developer? A web developer is programmer which
+                builds and maintains websites with the client and consumer in
+                mind. That is, the end result must include products and
+                services.</span
+              >
             </p>
             <p class="desc">
-              Why me? I can write a modern and performance website in a short
-              time. I use modern libraries and frameworks. Well, as a
-              conclusion, I have advanced knowledge of design.
+              <span data-i18n="aboutParagraph3">
+                Why me? I can write a modern and performance website in a short
+                time. I use modern libraries and frameworks. Well, as a
+                conclusion, I have advanced knowledge of design.</span
+              >
             </p>
             <p class="desc">
-              If you were interested, go below and see what I work with and what
-              I can do ..
+              <span data-i18n="aboutParagraph4">
+                If you were interested, go below and see what I work with and
+                what I can do ..</span
+              >
             </p>
           </div>
         </div>
@@ -164,7 +209,7 @@
     </main>
     <section class="services" id="services">
       <div class="container">
-        <h2 class="title">Services</h2>
+        <h2 class="title"><span data-i18n="services">Services</span></h2>
         <article class="services-wrap row">
           <div class="services-box-wrap col-sm-6 col-md-4 col-lg-3">
             <div class="services-box html">
@@ -243,7 +288,9 @@
     </section>
     <section class="banner">
       <div class="container">
-        <h2 class="title banner-title">How do i works ?</h2>
+        <h2 class="title banner-title">
+          <span data-i18n="howIWorks">How do i works ?</span>
+        </h2>
         <article class="banner-item-wrap row">
           <div
             class="banner-item-box col-sm-6 col-lg-4"
@@ -253,11 +300,15 @@
             data-aos-once="true"
           >
             <i class="fa fa-brain"></i>
-            <h3 class="subtitle item-box">Analyze work</h3>
+            <h3 class="subtitle item-box">
+              <span data-i18n="analyzeTitle">Analyze work</span>
+            </h3>
             <p class="desc item-box">
-              Analysis of the received project in order to consider the
-              possibilities for implementation, clarify customer requirements,
-              identify problems and determine ways to solve them.
+              <span data-i18n="ExecutionTestingDesc">
+                Analysis of the received project in order to consider the
+                possibilities for implementation, clarify customer requirements,
+                identify problems and determine ways to solve them.</span
+              >
             </p>
           </div>
           <div
@@ -268,11 +319,15 @@
             data-aos-once="true"
           >
             <i class="fas fa-vial"></i>
-            <h3 class="subtitle item-box">Execution & Testing</h3>
+            <h3 class="subtitle item-box">
+              <span data-i18n="ExecutionTestingTitle">Execution & Testing</span>
+            </h3>
             <p class="desc item-box">
-              Creation of a website taking into account the interests of the
-              client, the consumer & Product research, based on the desires and
-              the result obtained ..
+              <span data-i18n="ExecutionTestingDesc">
+                Creation of a website taking into account the interests of the
+                client, the consumer & Product research, based on the desires
+                and the result obtained ..</span
+              >
             </p>
           </div>
           <div
@@ -283,11 +338,15 @@
             data-aos-once="true"
           >
             <i class="fas fa-check"></i>
-            <h3 class="subtitle item-box">Publish</h3>
+            <h3 class="subtitle item-box">
+              <span data-i18n="PublishTitle">Publish</span>
+            </h3>
             <p class="desc item-box">
-              Make sure that the customer's requirements match the end result.
-              The site is responsive and optimized. Then he gets to the
-              Internet.
+              <span data-i18n="PublishDesc">
+                Make sure that the customer's requirements match the end result.
+                The site is responsive and optimized. Then he gets to the
+                Internet.</span
+              >
             </p>
           </div>
         </article>
@@ -295,7 +354,7 @@
     </section>
     <section class="portfolio" id="portfolio">
       <div class="container">
-        <h2 class="title">Portfolio</h2>
+        <h2 class="title"><span data-i18n="portfolio">Portfolio</span></h2>
         <article class="portfolio-wrap row">
           <div
             class="portfolio-box-wrap col-sm-6 col-lg-4"
@@ -430,7 +489,8 @@
           rel="noopener noreferrer nofollow"
           class="portfolio-btn"
           ><button class="btn">
-            <i class="fas fa-info-circle"></i>More Templates
+            <i class="fas fa-info-circle"></i
+            ><span data-i18n="btnTemplate">More Templates</span>
           </button></a
         >
       </div>
@@ -438,7 +498,7 @@
     <section class="questions" id="questions">
       <div class="container">
         <div class="questions-wrap row align-items-center">
-          <h2 class="title">Questions</h2>
+          <h2 class="title"><span data-i18n="questions">Questions</span></h2>
           <article class="accordion-box-wrap col-sm-12 col-lg-6">
             <div class="questions-wrap-info">
               <h3
@@ -448,7 +508,7 @@
                 data-aos-duration="750"
                 data-aos-once="true"
               >
-                Do you have a questions?
+                <span data-i18n="questionsTitle">Do you have a questions?</span>
               </h3>
               <p
                 class="desc questions-desc"
@@ -457,10 +517,12 @@
                 data-aos-duration="850"
                 data-aos-once="true"
               >
-                As it turned out, these are the most frequently asked
-                <span class="color-words">questions</span>
-                .. open them and get your
-                <span class="color-words">answers</span>!
+                <span data-i18n="questionsDesc"
+                  >As it turned out, these are the most frequently asked
+                  <span class="color-words">questions ..</span>
+                  open them and get your
+                  <span class="color-words">answers!</span></span
+                >
               </p>
             </div>
             <div class="accordion" id="accordion">
@@ -472,15 +534,19 @@
                 data-aos-once="true"
               >
                 <div class="accordion-title">
-                  <h4 class="subtitle accordion">Why me?</h4>
+                  <h4 class="subtitle accordion">
+                    <span data-i18n="questions1">Why me?</span>
+                  </h4>
                   <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="accordion-collapse">
                   <div class="accordion-content">
                     <p class="desc accordion">
-                      I can write a modern and performance website in a short
-                      time. I use modern libraries and frameworks. Well, as a
-                      conclusion, I have advanced knowledge of design.
+                      <span data-i18n="questions1Desc"
+                        >I can write a modern and performance website in a short
+                        time. I use modern libraries and frameworks. Well, as a
+                        conclusion, I have advanced knowledge of design.</span
+                      >
                     </p>
                   </div>
                 </div>
@@ -494,16 +560,20 @@
               >
                 <div class="accordion-title">
                   <h4 class="subtitle accordion">
-                    How much does to build a website?
+                    <span data-i18n="questions2"
+                      >How much does to build a website?</span
+                    >
                   </h4>
                   <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="accordion-collapse">
                   <div class="accordion-content">
                     <p class="desc accordion">
-                      Initially, I consider the scale of work and what services
-                      will be used for a given project / application.
-                      Subsequently, the price will be announced.
+                      <span data-i18n="questions2Desc">
+                        Initially, I consider the scale of work and what
+                        services will be used for a given project / application.
+                        Subsequently, the price will be announced.</span
+                      >
                     </p>
                   </div>
                 </div>
@@ -517,15 +587,20 @@
               >
                 <div class="accordion-title">
                   <h4 class="subtitle accordion">
-                    What projects will I take on?
+                    <span data-i18n="questions3">
+                      What projects will I take on?</span
+                    >
                   </h4>
                   <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="accordion-collapse">
                   <div class="accordion-content">
                     <p class="desc accordion">
-                      Basically, I take on all projects .. it all depends on the
-                      time for which you need to write the site / application.
+                      <span data-i18n="questions3Desc">
+                        Basically, I take on all projects .. it all depends on
+                        the time for which you need to write the site /
+                        application.</span
+                      >
                     </p>
                   </div>
                 </div>
@@ -538,15 +613,19 @@
                 data-aos-once="true"
               >
                 <div class="accordion-title">
-                  <h4 class="subtitle accordion">How to pay for an order?</h4>
+                  <h4 class="subtitle accordion">
+                    <span data-i18n="questions4">How to pay for an order?</span>
+                  </h4>
                   <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="accordion-collapse">
                   <div class="accordion-content">
                     <p class="desc accordion">
-                      If everything suits the customer, then, depending on the
-                      amount of the project, there is an advance payment. At the
-                      end of the work - the remainder of the amount.
+                      <span data-i18n="questions4Desc">
+                        If everything suits the customer, then, depending on the
+                        amount of the project, there is an advance payment. At
+                        the end of the work - the remainder of the amount.</span
+                      >
                     </p>
                   </div>
                 </div>
@@ -565,13 +644,16 @@
         </div>
         <div class="under-question-info">
           <h5 class="title under-question-title">
-            Stay have a questions? Get in touch!
+            <span data-i18n="underQuestionsTitle"
+              >Stay have a questions? Get in touch!</span
+            >
           </h5>
           <a
             href="mailto:dmitry.b09@gmail.com"
             rel="noopener noreferrer nofollow"
             ><button class="btn theme-btn questions-btn">
-              <i class="far fa-envelope"></i>Send Message
+              <i class="far fa-envelope"></i
+              ><span data-i18n="btnEmail">Send Message</span>
             </button></a
           >
         </div>
@@ -583,7 +665,8 @@
           <div class="col-sm-12 col-md-10">
             <p class="desc footer-desc">
               © <span id="copyRightYear">2021</span>
-              <i class="fas fa-heart"></i> Ranee Web Developer.
+              <i class="fas fa-code"></i>
+              <span data-i18n="footerName">Ranee Web Developer.</span>
             </p>
           </div>
           <div class="col-sm-12 col-md-2">
@@ -624,6 +707,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/i18next@20.3.0/dist/umd/i18next.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
