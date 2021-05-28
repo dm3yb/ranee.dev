@@ -537,7 +537,7 @@ h1,
   padding: 255px 0;
   text-align: center;
   position: relative;
-  background: url(../img/Original/hero.jpg) no-repeat center / cover;
+  background: url(../img/hero.webp) no-repeat center / cover;
   z-index: 1;
 }
 
@@ -628,7 +628,7 @@ h1,
   background-color: var(--transparent-gray);
 }
 
-.services-box i {
+.services-box i, .services-box img{
   font-size: 32px;
   margin-bottom: 12px;
 }
@@ -694,9 +694,9 @@ h1,
 }
 
 .services-box.photoshop:hover {
-  --photoshop-color: hsl(230, 50%, 30%);
+  --adobe-xd-color: hsl(230, 50%, 30%);
   --photoshop-dark-color: hsl(230, 50%, 30%);
-  color: var(--photoshop-color);
+  color: var(--adobe-xd-color);
   box-shadow: 17px 17px 0 0 var(--photoshop-dark-color);
 }
 
@@ -714,10 +714,10 @@ h1,
   box-shadow: 17px 17px 0 0 var(--gulp-dark-color);
 }
 
-.services-box.performance:hover {
-  --performance-color: hsl(0, 75%, 40%);
-  --performance-dark-color: hsl(0, 70%, 40%);
-  color: var(--performance-color);
+.services-box.firebase:hover {
+  --firebase-color: hsl(30, 90%, 50%);
+  --performance-dark-color: hsl(30, 100%, 48%);
+  color: var(--firebase-color);
   box-shadow: 17px 17px 0 0 var(--performance-dark-color);
 }
 /* ============================== SERVICES END ============================== */
