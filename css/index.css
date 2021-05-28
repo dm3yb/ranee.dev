@@ -268,6 +268,11 @@ span,
   border-radius: 999px;
 }
 
+:focus{
+  outline: 2px solid var(--outline-focus-color);
+  box-shadow: 0 2px 12px 0 var(--outline-focus-color);
+}
+
 :root {
   --hue: 0;
   --theme-color: hsl(var(--hue), 0%, 11%);
@@ -284,6 +289,7 @@ span,
   --theme-shadow: hsla(var(--hue), 57%, 21%, 0.25);
   --theme-filter-shadow: hsla(var(--hue), 0%, 11%, 0.2);
   --scrollbar-track-color: hsl(var(--hue), 0%, 87%);
+  --outline-focus-color: hsl(calc(var(--hue) + 216), 82%, 51%);
   --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -379,12 +385,6 @@ h1,
 .btn.burger-btn > i {
   margin-right: initial;
 }
-
-.color-words {
-  color: var(--darknes-secondary-theme-color);
-  font-weight: 700;
-  font-style: italic;
-}
 /* ============================== COMMON END ============================== */
 
 /* ============================== HEADER START ============================== */
@@ -412,7 +412,7 @@ h1,
 }
 
 .logo-wrap i {
-  font-size: 28px;
+  font-size: 27px;
   color: var(--secondary-theme-color);
   transition: 0.25s;
 }
@@ -652,8 +652,8 @@ h1,
 }
 
 .services-box.js:hover {
-  --js-color: hsl(45, 80%, 50%);
-  --js-dark-color: hsl(45, 70%, 50%);
+  --js-color: hsl(47, 100%, 48%);
+  --js-dark-color: hsl(47, 90%, 48%);
   color: var(--js-color);
   box-shadow: 17px 17px 0 0 var(--js-dark-color);
 }
