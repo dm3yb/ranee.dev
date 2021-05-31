@@ -50,8 +50,7 @@ i18next.init({
 				"questions4": "How to pay for an order?",
 				"questions4Desc": "If everything suits the customer, then, depending on the amount of the project, there is an advance payment. At the end of the work - the remainder of the amount.",
 				"underQuestionsTitle": "Stay have a questions? Get in touch!",
-				"btnEmail": "Send Message",
-				"footerName": "Ranee Web Developer.",
+				"footerName": "Ranee Web Developer",
 			}
 		},
 		ru: {
@@ -93,8 +92,7 @@ i18next.init({
 				"questions4": "Как оплатить заказ?",
 				"questions4Desc": "Если заказчика все устраивает, то, в зависимости от суммы проекта, есть предоплата. По окончании работы - остаток суммы.",
 				"underQuestionsTitle": "Остались вопросы? Связаться!",
-				"btnEmail": "Отправить сообщение",
-				"footerName": "Рэни Веб-Разработчик.",
+				"footerName": "Рэни Веб-Разработчик",
 			}
 		},
 		uk: {
@@ -136,8 +134,7 @@ i18next.init({
 				"questions4": "Як оплатити замовлення?",
 				"questions4Desc": "Якщо замовника все влаштовує, то, в залежності від суми проекту, є передоплата. Після закінчення роботи - залишок суми.",
 				"underQuestionsTitle": "Залишилися питання? Зв'язатися!",
-				"btnEmail": "Надіслати повідомлення",
-				"footerName": "Рені Веб-Розробник.",
+				"footerName": "Рені Веб-Розробник",
 			}
 		},
 		sk: {
@@ -179,8 +176,7 @@ i18next.init({
 				"questions4": "Ako splatiť objednávku?",
 				"questions4Desc": "Ak zákazník so všetkým spokojný, potom v závislosti od výšky projektu existuje záloha. Na konci práce - zvyšok sumy.",
 				"underQuestionsTitle": "Stále máte otázky? Spojiť sa!",
-				"btnEmail": "Odoslať správu",
-				"footerName": "Ranee webový-vývojár.",
+				"footerName": "Ranee Webový vývojár",
 			}
 		}
 	}
