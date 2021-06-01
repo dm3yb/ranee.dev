@@ -216,7 +216,7 @@ i18next
           PublishTitle: 'Publikácia',
           PublishDesc:
             'Presvedčiť sa, že požiadavky zákazníka sú v súlade s konečným výsledkom. Stránka je adaptívna a rýchla. Neskôr sa trafí v internet.',
-          portfolioTitle: '(Šablón)',
+          portfolioTitle: '(Šablóna)',
             btnTemplate: 'Viac šablónov',
           questionsTitle: 'Máte otázky?',
           questionsDesc:
