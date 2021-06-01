@@ -3,6 +3,7 @@
   <head>
     <link rel="preload" href="./bootstrap-grid.min.css" />
     <link rel="preload" href="./css/index.css" as="style" />
+    <link rel="preload" href="./js/app.js" as="script" />
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <meta charset="UTF-8" />
@@ -71,14 +72,7 @@
               </ul>
             </div>
           </div>
-          <button
-            class="btn burger-btn"
-            id="burgerBtn"
-            data-aos="fade-right"
-            data-aos-once="true"
-            data-aos-delay="250"
-            data-aos-duration="1000"
-          >
+          <button class="btn burger-btn" id="burgerBtn">
             <i class="fas fa-bars"></i>
           </button>
         </nav>
@@ -87,23 +81,8 @@
     <section class="hero" id="hero">
       <div class="container">
         <div class="hero-info">
-          <span
-            class="hero-text"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="550"
-            data-aos-once="true"
-            data-i18n="hello"
-            >Hello I'm</span
-          >
-          <div
-            class="swiper-container hero-slider"
-            id="heroSlider"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="650"
-            data-aos-once="true"
-          >
+          <span class="hero-text" data-i18n="hello">Hello I'm</span>
+          <div class="swiper-container hero-slider" id="heroSlider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <h1><span data-i18n="name">Ranee / Dmitry</span></h1>
@@ -125,13 +104,7 @@
               </div>
             </div>
           </div>
-          <p
-            class="desc hero-desc"
-            data-aos="fade-up"
-            data-aos-delay="150"
-            data-aos-duration="750"
-            data-aos-once="true"
-          >
+          <p class="desc hero-desc">
             <span data-i18n="heroSloganParagraph1"
               >Graphic Designer This is one page website about me, my portfolio
               and abilities ..
@@ -141,13 +114,7 @@
               >shortly saying "calling card" website.</span
             >
           </p>
-          <button
-            class="btn large"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="850"
-            data-aos-once="true"
-          >
+          <button class="btn large">
             <i class="fas fa-file-download"></i
             ><span data-i18n="btnCV">Dowload CV</span>
           </button>
@@ -170,12 +137,7 @@
               height="1"
             />
           </div>
-          <div
-            class="about-info-box col-sm-12 col-lg-6"
-            data-aos="fade-up"
-            data-aos-duration="750"
-            data-aos-once="true"
-          >
+          <div class="about-info-box col-sm-12 col-lg-6">
             <p class="desc">
               <span data-i18n="aboutParagraph1">
                 Hey! My name is Dmitry. I am a young, ambitious and determined
@@ -310,13 +272,7 @@
           <span data-i18n="howIWorks">How do i works ?</span>
         </h2>
         <article class="banner-item-wrap row">
-          <div
-            class="banner-item-box col-sm-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="250"
-            data-aos-duration="550"
-            data-aos-once="true"
-          >
+          <div class="banner-item-box col-sm-6 col-lg-4">
             <i class="fa fa-brain"></i>
             <h3 class="subtitle item-box">
               <span data-i18n="analyzeTitle">Analyze work</span>
@@ -329,13 +285,7 @@
               >
             </p>
           </div>
-          <div
-            class="banner-item-box col-sm-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-duration="650"
-            data-aos-once="true"
-          >
+          <div class="banner-item-box col-sm-6 col-lg-4">
             <i class="fas fa-vial"></i>
             <h3 class="subtitle item-box">
               <span data-i18n="ExecutionTestingTitle">Execution & Testing</span>
@@ -348,13 +298,7 @@
               >
             </p>
           </div>
-          <div
-            class="banner-item-box col-sm-6 col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="450"
-            data-aos-duration="700"
-            data-aos-once="true"
-          >
+          <div class="banner-item-box col-sm-6 col-lg-4">
             <i class="fas fa-check"></i>
             <h3 class="subtitle item-box">
               <span data-i18n="PublishTitle">Publish</span>
@@ -373,134 +317,72 @@
     <section class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="title"><span data-i18n="portfolio">Portfolio</span></h2>
-        <article class="portfolio-wrap row">
-          <div
-            class="portfolio-box-wrap col-sm-6 col-lg-4"
-            title="This Template"
+        <div class="portfolio-item-wrap row">
+          <a
+            href="https://raneedev.github.io/Analytics/"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+            class="portfolio-item col-sm-12 col-lg-4"
           >
-            <a
-              href="https://raneedev.github.io/Gift-store/"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-            >
-              <div class="portfolio-box">
-                <img
-                  src="./img/gift-store-preview.webp"
-                  alt="Template Image"
-                  width="1"
-                  height="1"
-                  loading="lazy"
-                />
-                <h3 class="subtitle">Gift Store</h3>
-              </div>
-            </a>
-          </div>
-          <div
-            class="portfolio-box-wrap col-sm-6 col-lg-4"
-            title="This Template"
+            <img src="./img/analytics.webp" alt="Template Image" />
+            <h3 class="subtitle">
+              Analytics <span data-i18n="portfolioTitle">(Template)</span>
+            </h3>
+          </a>
+          <a
+            href="https://raneedev.github.io/PlatOps/"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+            class="portfolio-item col-sm-12 col-lg-4"
           >
-            <a
-              href="https://raneedev.github.io/Car-repair/"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-            >
-              <div class="portfolio-box">
-                <img
-                  src="./img/car-repair-preview.webp"
-                  alt="Template Image"
-                  width="1"
-                  height="1"
-                  loading="lazy"
-                />
-                <h3 class="subtitle">Car Repair</h3>
-              </div>
-            </a>
-          </div>
-          <div
-            class="portfolio-box-wrap col-sm-6 col-lg-4"
-            title="This Template"
+            <img src="./img/PlatOps.webp" alt="Template Image" />
+            <h3 class="subtitle">PlatOps Security</h3>
+          </a>
+          <a
+            href="https://raneedev.github.io/mamon/"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+            class="portfolio-item col-sm-12 col-lg-4"
           >
-            <a
-              href="https://raneedev.github.io/Analytics/"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-            >
-              <div class="portfolio-box">
-                <img
-                  src="./img/analytics-preview.webp"
-                  alt="Template Image"
-                  width="1"
-                  height="1"
-                  loading="lazy"
-                />
-                <h3 class="subtitle">Analitycs</h3>
-              </div>
-            </a>
-          </div>
-          <div
-            class="portfolio-box-wrap col-sm-6 col-lg-4"
-            title="This Template"
+            <img src="./img/mamon.webp" alt="Template Image" />
+            <h3 class="subtitle">
+              Mamon <span data-i18n="portfolioTitle">(Template)</span>
+            </h3>
+          </a>
+          <a
+            href="https://raneedev.github.io/Car-repair/"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+            class="portfolio-item col-sm-12 col-lg-4"
           >
-            <a
-              href="https://raneedev.github.io/kauf-shop/"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-            >
-              <div class="portfolio-box">
-                <img
-                  src="./img/kauf-shop-preview.webp"
-                  alt="Template Image"
-                  width="1"
-                  height="1"
-                  loading="lazy"
-                />
-                <h3 class="subtitle">Kauf Shop</h3>
-              </div>
-            </a>
-          </div>
-          <div
-            class="portfolio-box-wrap col-sm-6 col-lg-4"
-            title="This Template"
+            <img src="./img/Car-repair.webp" alt="Template Image" />
+            <h3 class="subtitle">
+              Car Repair <span data-i18n="portfolioTitle">(Template)</span>
+            </h3>
+          </a>
+          <a
+            href="https://raneedev.github.io/Gift-store/"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+            class="portfolio-item col-sm-12 col-lg-4"
           >
-            <a
-              href="https://raneedev.github.io/mamon/"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-            >
-              <div class="portfolio-box">
-                <img
-                  src="./img/mamon-preview.webp"
-                  alt="Template Image"
-                  width="1"
-                  height="1"
-                  loading="lazy"
-                />
-                <h3 class="subtitle">Mamon</h3>
-              </div>
-            </a>
-          </div>
-          <div
-            class="portfolio-box-wrap col-sm-6 col-lg-4"
-            title="This Template"
+            <img src="./img/gift-store.webp" alt="Template Image" />
+            <h3 class="subtitle">
+              Gift Store <span data-i18n="portfolioTitle">(Template)</span>
+            </h3>
+          </a>
+          <a
+            href="https://raneedev.github.io/AutoRia/"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+            class="portfolio-item col-sm-12 col-lg-4"
           >
-            <a
-              href="https://raneedev.github.io/PlatOps/"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-            >
-              <div class="portfolio-box">
-                <img
-                  src="./img/platops-preview.webp"
-                  alt="Template Image"
-                  width="1"
-                  height="1"
-                  loading="lazy"
-                />
-                <h3 class="subtitle">PlatOps</h3>
-              </div>
-            </a>
-          </div>
-        </article>
+            <img src="./img/Autoria.webp" alt="Template Image" />
+            <h3 class="subtitle">
+              Autoria <span data-i18n="portfolioTitle">(Template)</span>
+            </h3>
+          </a>
+        </div>
         <a
           href="https://github.com/RaneeDEV?tab=repositories"
           target="_blank"
@@ -519,22 +401,10 @@
           <h2 class="title"><span data-i18n="questions">Questions</span></h2>
           <article class="accordion-box-wrap col-sm-12 col-lg-6">
             <div class="questions-wrap-info">
-              <h3
-                class="subtitle questions-subtitle"
-                data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="750"
-                data-aos-once="true"
-              >
+              <h3 class="subtitle questions-subtitle">
                 <span data-i18n="questionsTitle">Do you have a questions?</span>
               </h3>
-              <p
-                class="desc questions-desc"
-                data-aos="fade-up"
-                data-aos-delay="100"
-                data-aos-duration="850"
-                data-aos-once="true"
-              >
+              <p class="desc questions-desc">
                 <span data-i18n="questionsDesc"
                   >As it turned out, these are the most frequently asked
                   questions .. open them and get your answers</span
@@ -542,13 +412,7 @@
               </p>
             </div>
             <div class="accordion" id="accordion">
-              <div
-                class="accordion-item"
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-duration="650"
-                data-aos-once="true"
-              >
+              <div class="accordion-item">
                 <div class="accordion-title">
                   <h4 class="subtitle accordion">
                     <span data-i18n="questions1">Why me?</span>
@@ -567,13 +431,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="accordion-item"
-                data-aos="fade-up"
-                data-aos-delay="250"
-                data-aos-duration="650"
-                data-aos-once="true"
-              >
+              <div class="accordion-item">
                 <div class="accordion-title">
                   <h4 class="subtitle accordion">
                     <span data-i18n="questions2"
@@ -594,13 +452,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="accordion-item"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="650"
-                data-aos-once="true"
-              >
+              <div class="accordion-item">
                 <div class="accordion-title">
                   <h4 class="subtitle accordion">
                     <span data-i18n="questions3">
@@ -621,13 +473,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="accordion-item"
-                data-aos="fade-up"
-                data-aos-delay="350"
-                data-aos-duration="650"
-                data-aos-once="true"
-              >
+              <div class="accordion-item">
                 <div class="accordion-title">
                   <h4 class="subtitle accordion">
                     <span data-i18n="questions4">How to pay for an order?</span>
@@ -678,11 +524,41 @@
             />
           </div>
           <div class="contact-socials-wrap col-sm-12 col-lg-6">
-            <a href="https://github.com/RaneeDEV" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="skype:live:.cid.edf04094f50e96e2?chat" target="_blank" title="Skype"><i class="fab fa-skype"></i></a>
-            <a href="https://telegram.me/ranee_dev" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
-            <a href="https://instagram.com/ranee.dev?utm_medium=copy_link" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:dmitry.b09@gmail.com" target="_blank" title="Email"><i class="fas fa-inbox"></i></a>
+            <a
+              href="https://github.com/RaneeDEV"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              title="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="skype:live:.cid.edf04094f50e96e2?chat"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              title="Skype"
+              ><i class="fab fa-skype"></i
+            ></a>
+            <a
+              href="https://telegram.me/ranee_dev"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              title="Telegram"
+              ><i class="fab fa-telegram"></i
+            ></a>
+            <a
+              href="https://instagram.com/ranee.dev?utm_medium=copy_link"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+              title="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="mailto:dmitry.b09@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              title="Email"
+              ><i class="fas fa-inbox"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -699,9 +575,7 @@
       </div>
     </footer>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/i18next@20.3.0/dist/umd/i18next.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
